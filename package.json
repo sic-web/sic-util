@@ -1,0 +1,14 @@
+{
+  "name": "sic-util",
+  "version": "1.0.1",
+  "description": "",
+  "main": "utils/index.ts",
+  "scripts": {
+    "test": "node test/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "number-precision": "^1.6.0"
+  }
+}
