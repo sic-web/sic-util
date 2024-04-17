@@ -15,7 +15,7 @@ TODO
 git add .
 git commit -m "feat: 更新" --no-verify
 
-https://shlc_public.gitlab.io/sic-ui/
+https://shlc_public.gitlab.io/sic-util/
 
 ## Development
 
