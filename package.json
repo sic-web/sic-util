@@ -1,16 +1,67 @@
 {
   "name": "sic-util",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "sicUtils by zijin",
   "type": "module",
-  "main": "utils/index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
-    "dev": "ts-node test/index.js",
-    "test": "ts-node test/index.js"
+    "lint": "eslint --ext .js,.ts ./ --fix",
+    "dev": "rollup -c --watch",
+    "build": "rollup -c && npm run doc",
+    "test": "vitest",
+    "doc": "api-extractor run --local --verbose && api-documenter markdown -i temp -o doc",
+    "doc:debug": "api-extractor run --local --verbose --diagnostics && api-documenter markdown -i temp -o doc",
+    "trace": "tsc dist/types/index.d.ts --traceResolution > trace.log",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "npm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  },
   "dependencies": {
-    "number-precision": "^1.6.0"
+    "number-precision": "^1.6.0",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "@microsoft/api-documenter": "^7.24.2",
+    "@microsoft/api-extractor": "^7.43.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^20.12.7",
+    "eslint": "^9.0.0",
+    "fast-glob": "^3.3.2",
+    "rollup": "^4.14.3",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-import-export": "^0.0.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.5",
+    "vitepress": "^1.1.0",
+    "vitest": "^1.5.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
   }
 }

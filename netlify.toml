@@ -1,0 +1,3 @@
+[build]
+    publish = ".vitepress/dist"
+    command = "npx npm i && npm run docs:build"
