@@ -1,10 +1,10 @@
 pages:
   script:
     - mkdir .public
-    - cp -r .a/* .public
+    - cp -r .a/dist/* .public
     - mv .public public
   artifacts:
     paths:
-      - public/dist/index.html
+      - public
   only:
     - main # 部署触发的分支，可根据需要修改
