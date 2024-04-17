@@ -174,6 +174,51 @@
       "members": [
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!bytes_to_int:function(1)",
+          "docComment": "/**\n * 该函数将四个字节的数组转换为单个整数值。\n *\n * @param bytes - 参数“bytes”是一个由四个数字组成的数组，代表一个 32 位整数，以大端字节顺序排列。函数“bytes_to_int”将此字节数组转换为单个整数值。\n *\n * @returns 函数“bytes_to_int”返回一个整数值，该值是通过以大端顺序连接输入数组“bytes”中的四个字节获得的。\n *\n * @example\n * ```ts\n * bytes_to_int([0x78, 0x56, 0x34, 0x12]) // 0x12345678\n * ```\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function bytes_to_int(bytes: "
+            },
+            {
+              "kind": "Content",
+              "text": "[number, number, number, number]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/math.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "bytes",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "bytes_to_int"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!demo:function(1)",
           "docComment": "",
           "excerptTokens": [
@@ -186,7 +231,7 @@
               "text": "void"
             }
           ],
-          "fileUrlPath": "dist/types/index.d.ts",
+          "fileUrlPath": "dist/types/modules/demo.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 2
@@ -195,6 +240,886 @@
           "overloadIndex": 1,
           "parameters": [],
           "name": "demo"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!int_to_bytes:function(1)",
+          "docComment": "/**\n * 该函数使用按位运算将整数转换为 4 字节的数组并返回该数组。\n *\n * @param num - 参数 num 是需要转换为字节数组的数字。\n *\n * @returns 函数“int_to_bytes”返回一个“Uint8Array”，其中包含以小端字节顺序排列的输入数字的四个字节。\n *\n * @example\n * ```ts\n * int_to_bytes(0x12345678) // [0x78, 0x56, 0x34, 0x12]\n * ```\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function int_to_bytes(num: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Uint8Array",
+              "canonicalReference": "!Uint8Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/math.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "num",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "int_to_bytes"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!math_between:function(1)",
+          "docComment": "/**\n * 该函数返回指定范围内的数字。\n *\n * @param v - 一个你想检查它是否落在最小和最大范围之间的数字。\n *\n * @param min - 输入数字“v”可以是的最小值。\n *\n * @param max - 参数“max”是输入数字“v”所能达到的最大值。该函数通过在“v”大于“max”时返回“max”来确保“v”不大于“max”。\n *\n * @returns 函数“math_between”返回一个在“min”和“max”参数定义的范围内的数字。如果输入的“v”小于“min”，则函数返回“min”。如果 `v` 大于 `max`，函数返回 `max`。如果 `v` 在 `min` 和 `max` 之间，函数返回 `v`。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function math_between(v: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", min: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", max: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/math.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "v",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "min",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "max",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "math_between"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!math_random_int:function(1)",
+          "docComment": "/**\n * 该函数返回指定范围内的随机整数。\n *\n * @param from - 生成随机整数的范围的最小值。\n *\n * @param to - “to”参数是生成随机整数的范围的上限。\n *\n * @returns 函数 `math_random_int` 返回介于 `from` 和 `to` 参数（含）之间的随机整数。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function math_random_int(from: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", to: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/math.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "from",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "to",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "math_random_int"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!math_to_fixed:function(1)",
+          "docComment": "/**\n * 该函数返回一个四舍五入到指定小数位数的数字。\n *\n * @param n - 需要四舍五入到小数点后固定位数的数字。\n *\n * @param digit - 给定数字应四舍五入到小数点后的位数。如果没有为 digit 提供值，则默认为 0，这意味着数字将四舍五入到最接近的整数。\n *\n * @returns 函数“math_to_fixed”返回一个数字，该数字已四舍五入到小数点后的指定位数。小数点后的位数由 digit 参数决定，如果不指定则默认为 0。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function math_to_fixed(n: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", digit?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/math.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "n",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "digit",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "math_to_fixed"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!math_to_hex:function(1)",
+          "docComment": "/**\n * 该函数将数字转换为包含大写字母且最小长度为 2 个字符的十六进制字符串。\n *\n * @param n - 参数“n”是一个将被转换为十六进制字符串的数字。\n *\n * @returns 该函数返回一个包含大写字母且最小长度为 2 个字符的十六进制字符串。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function math_to_hex(n: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/math.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "n",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "math_to_hex"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_capital_all:function(1)",
+          "docComment": "/**\n * 该函数将给定字符串中每个单词的首字母大写。\n *\n * @param str - 包含一个或多个由空格分隔的单词的字符串。\n *\n * @returns 函数 str_capital_all 返回一个新字符串，其中输入字符串中的所有单词都大写。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_capital_all(str: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "str",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "str_capital_all"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_capital:function(1)",
+          "docComment": "/**\n * 该函数将给定字符串的第一个字母大写。\n *\n * @param str - 参数“str”是一个字符串输入，表示需要大写的文本。\n *\n * @returns 函数 `str_capital` 返回一个新字符串，第一个字符大写，其余字符不变。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_capital(str: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "str",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "str_capital"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_complement:function(1)",
+          "docComment": "/**\n * 该函数将前导零添加到数字或字符串中以使其具有特定长度。\n *\n * @deprecated\n *\n * 已废弃，建议使用 padStart 或 padEnd。\n *\n * @param n - 需要用前导字符格式化的输入数字或字符串。\n *\n * @param len - 结果字符串的长度。如果输入字符串的长度小于 len，该函数将在字符串的开头添加字符，直到达到所需的长度。\n *\n * @param char - 用于填充字符串的字符。如果未提供任何字符，则使用“0”作为默认值。\n *\n * @returns 函数 `str_complement` 返回一个字符串，该字符串可以是原始输入 `n` 转换为字符串，也可以是长度为 `len` 的字符串，字符 `char` 根据需要重复多次以填充剩余空间，然后是原始输入 `n` 转换为字符串。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_complement(n: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string"
+            },
+            {
+              "kind": "Content",
+              "text": ", len?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", char?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "n",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "len",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            },
+            {
+              "parameterName": "char",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "str_complement"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_ensure_chinese:function(1)",
+          "docComment": "/**\n * 函数从输入字符串中删除所有非中文字符。\n *\n * @param str - 输入字符串\n *\n * @returns 返回一个排除了非中文字符的新字符串，中文字符的判定范围`\\u4e00-\\u9fa5`。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_ensure_chinese(str: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "str",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "str_ensure_chinese"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_ensure_prefix:function(1)",
+          "docComment": "/**\n * 该函数确保给定的字符串具有指定的前缀。\n *\n * @param s - 我们要确保的字符串具有特定的前缀。\n *\n * @param prefix - prefix 参数是一个字符串，我们要确保它位于输入字符串的开头。如果输入字符串已经以前缀开头，则函数按原样返回输入字符串。否则，该函数将前缀添加到输入字符串的开头并返回结果字符串\n *\n * @returns 函数“str_ensure_prefix”返回一个字符串。如果输入字符串“s”以“prefix”字符串开头，则该函数按原样返回“s”。否则，它返回一个新字符串，它是“prefix”字符串和原始“s”字符串的串联。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_ensure_prefix(s: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", prefix: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "s",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "prefix",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "str_ensure_prefix"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_ensure_suffix:function(1)",
+          "docComment": "/**\n * 该函数确保给定的字符串以指定的后缀结尾。\n *\n * @param s - 我们要确保以特定后缀结尾的字符串。\n *\n * @param suffix - “suffix”参数是一个字符串，它表示需要添加到“s”字符串末尾（如果不存在）的所需后缀。\n *\n * @returns 函数“str_ensure_suffix”返回一个字符串。具体来说，如果它已经以 `suffix` 参数结尾，它返回原始字符串 `s`，或者如果 `s` 还没有以 `suffix` 结尾，它返回一个新的字符串，它是 `s` 和 `suffix` 的连接。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_ensure_suffix(s: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", suffix: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "s",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "suffix",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "str_ensure_suffix"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_maybe_number:function(1)",
+          "docComment": "/**\n * 该函数接受一个数字或字符串并将其作为字符串返回。\n *\n * @param target - 参数“目标”可以是数字或字符串。\n *\n * @returns 输入参数的字符串表示形式，无论是数字还是字符串。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_maybe_number(target: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "target",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "str_maybe_number"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_no_prefix:function(1)",
+          "docComment": "/**\n * 该函数从字符串中删除给定的前缀（如果存在）。\n *\n * @param s - 可能有也可能没有需要删除的前缀的字符串。\n *\n * @param prefix - prefix 参数是一个字符串，表示我们要从输入字符串的开头删除的前缀。\n *\n * @returns 函数 str_no_prefix 返回一个字符串。如果输入字符串 s 以输入前缀 prefix 结尾，该函数返回 s 的不包括前缀的子字符串。否则，该函数返回原始字符串 s。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_no_prefix(s: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", prefix: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "s",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "prefix",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "str_no_prefix"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_no_suffix:function(1)",
+          "docComment": "/**\n * 该函数从字符串中删除给定的后缀（如果存在）。\n *\n * @param s - 可能以指定后缀结尾的字符串。\n *\n * @param suffix - “后缀”参数是一个字符串，表示我们要删除的输入字符串“s”的结尾字符。\n *\n * @returns 函数 str_no_suffix 返回一个字符串。如果输入字符串 s 以输入后缀 suffix 结尾，则该函数返回 s 的不包括后缀的子字符串。否则，该函数返回原始字符串 s。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_no_suffix(s: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", suffix: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "s",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "suffix",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "str_no_suffix"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_random:function(1)",
+          "docComment": "/**\n * 该函数生成指定长度和基数的随机字符串。\n *\n * @param count - 将生成的随机字符串中的字符数。\n *\n * @param radix - Radix 是指用于随机字符串生成的基数系统。默认值为 16，这意味着字符串将使用十六进制数字（0-9 和 A-F）生成。但是，可以将基数设置为 2 到 36 之间的任何值以使用\n *\n * @returns 具有指定长度和基数（基数）的随机生成的字符串。 radix 是可选的，如果未提供则默认为 16。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_random(count: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", radix?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "count",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "radix",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "str_random"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!str_uuid:function(1)",
+          "docComment": "/**\n * 生成 UUID 字符串。\n *\n * @returns 返回表示 UUID（通用唯一标识符）的字符串。\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function str_uuid(): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/string.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "str_uuid"
         }
       ]
     }

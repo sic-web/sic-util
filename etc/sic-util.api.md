@@ -4,8 +4,59 @@
 
 ```ts
 
+// @public
+export function bytes_to_int(bytes: [number, number, number, number]): number;
+
 // @public (undocumented)
 export const demo: () => void;
+
+// @public
+export function int_to_bytes(num: number): Uint8Array;
+
+// @public
+export function math_between(v: number, min: number, max: number): number;
+
+// @public
+export function math_random_int(from: number, to: number): number;
+
+// @public
+export function math_to_fixed(n: number, digit?: number): number;
+
+// @public
+export function math_to_hex(n: number): string;
+
+// @public
+export function str_capital(str: string): string;
+
+// @public
+export function str_capital_all(str: string): string;
+
+// @public @deprecated
+export function str_complement(n: number | string, len?: number, char?: string): string;
+
+// @public
+export function str_ensure_chinese(str: string): string;
+
+// @public
+export function str_ensure_prefix(s: string, prefix: string): string;
+
+// @public
+export function str_ensure_suffix(s: string, suffix: string): string;
+
+// @public
+export function str_maybe_number(target: number | string): string;
+
+// @public
+export function str_no_prefix(s: string, prefix: string): string;
+
+// @public
+export function str_no_suffix(s: string, suffix: string): string;
+
+// @public
+export function str_random(count: number, radix?: number): string;
+
+// @public
+export function str_uuid(): string;
 
 // (No @packageDocumentation comment for this package)
 
