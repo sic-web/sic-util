@@ -1,7 +1,7 @@
 pages:
   script:
     - mkdir .public
-    - cp -r .vitepress/* .public
+    - cp -r a.html .public
     - mv .public public
   artifacts:
     paths:
