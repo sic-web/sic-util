@@ -1,0 +1,6 @@
+pages:
+  artifacts:
+    paths:
+      - .vitepress/dist
+  only:
+    - main # 部署触发的分支，可根据需要修改
