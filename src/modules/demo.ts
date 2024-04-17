@@ -1,4 +1,7 @@
+/**
+ * 函数“demo”将字符串“123”记录到控制台。
+ */
 const demo = () => {
-  console.log("123");
+  return true;
 };
 export { demo };

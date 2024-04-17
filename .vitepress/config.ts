@@ -2,7 +2,6 @@ import { basename } from "path";
 import type { DefaultTheme } from "vitepress";
 import { defineConfig } from "vitepress";
 import fg from "fast-glob";
-import { str_capital_all } from "../src/modules/string";
 
 interface IndexTree {
   [index: string]: {
@@ -14,14 +13,13 @@ interface IndexTree {
 function copyright() {
   const start = 2023;
   const now = new Date().getFullYear();
-  const year = now === start ? "2023" : `${start}-${now}`;
-  return `Copyright © ${year} Taiyuuki`;
+  const year = now === start ? "2024" : `${start}-${now}`;
+  return `Copyright © ${year} zijin`;
 }
 
 function resolveTitle(title: string) {
   title = title === "utils" ? title : title.replace("utils.", "");
   title = title.split(".").join(" ");
-  title = str_capital_all(title.replace(/_/g, " "));
   return title;
 }
 
@@ -64,35 +62,23 @@ const tree = fg
   .map((path) => basename(path))
   .reduce((tree, file) => {
     getTree(file, "", tree);
+
     return tree;
   }, {});
 
 const docs: DefaultTheme.SidebarItem[] = treeToItems(tree);
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Utils",
-  description: "Documentations of @taiyuuki/utils",
+  description: "Documentations of zijin",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/doc/index" },
-      { text: "API", link: "/doc/utils" },
+      { text: "API", link: "/doc/sic-utils" },
     ],
-
-    sidebar: [
-      {
-        text: "API",
-        items: docs,
-      },
-    ],
-
-    socialLinks: [{ icon: "github", link: "https://github.com/taiyuuki/utils" }],
-
-    search: {
-      provider: "local",
-    },
-
+    sidebar: [{ text: "API", items: docs }],
+    socialLinks: [{ icon: "github", link: "https://github.com/" }],
+    search: { provider: "local" },
     footer: {
       message: "Released under the MIT License.",
       copyright: copyright(),

@@ -18,6 +18,7 @@
       "dom"
     ],
     "baseUrl": ".",
+  
     "paths": {
       "src/*": [
         "src/*"

@@ -19,197 +19,56 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
-[bytes\_to\_int(bytes)](./sic-util.bytes_to_int.md)
-
-
-</td><td>
-
-该函数将四个字节的数组转换为单个整数值。
-
-
-</td></tr>
-<tr><td>
-
 [demo()](./sic-util.demo.md)
 
 
 </td><td>
 
-
-</td></tr>
-<tr><td>
-
-[int\_to\_bytes(num)](./sic-util.int_to_bytes.md)
-
-
-</td><td>
-
-该函数使用按位运算将整数转换为 4 字节的数组并返回该数组。
+函数“demo”将字符串“123”记录到控制台。
 
 
 </td></tr>
 <tr><td>
 
-[math\_between(v, min, max)](./sic-util.math_between.md)
+[get\_multiple\_color(value, opacity)](./sic-util.get_multiple_color.md)
 
 
 </td><td>
 
-该函数返回指定范围内的数字。
+该函数将颜色转成一种颜色的多种透明度的
 
 
 </td></tr>
 <tr><td>
 
-[math\_random\_int(from, to)](./sic-util.math_random_int.md)
+[hex\_to\_rgb(hex)](./sic-util.hex_to_rgb.md)
 
 
 </td><td>
 
-该函数返回指定范围内的随机整数。
+函数“hex\_to\_rgb”将十六进制颜色代码转换为 RGB 颜色数组。
 
 
 </td></tr>
 <tr><td>
 
-[math\_to\_fixed(n, digit)](./sic-util.math_to_fixed.md)
+[reduce\_opacity(rgb, opacity)](./sic-util.reduce_opacity.md)
 
 
 </td><td>
 
-该函数返回一个四舍五入到指定小数位数的数字。
+函数“reduce\_opacity”将十六进制颜色透明度改变，得到同等规则下的颜色。
 
 
 </td></tr>
 <tr><td>
 
-[math\_to\_hex(n)](./sic-util.math_to_hex.md)
+[rgb\_to\_hex(rgb)](./sic-util.rgb_to_hex.md)
 
 
 </td><td>
 
-该函数将数字转换为包含大写字母且最小长度为 2 个字符的十六进制字符串。
-
-
-</td></tr>
-<tr><td>
-
-[str\_capital\_all(str)](./sic-util.str_capital_all.md)
-
-
-</td><td>
-
-该函数将给定字符串中每个单词的首字母大写。
-
-
-</td></tr>
-<tr><td>
-
-[str\_capital(str)](./sic-util.str_capital.md)
-
-
-</td><td>
-
-该函数将给定字符串的第一个字母大写。
-
-
-</td></tr>
-<tr><td>
-
-[str\_complement(n, len, char)](./sic-util.str_complement.md)
-
-
-</td><td>
-
-该函数将前导零添加到数字或字符串中以使其具有特定长度。
-
-
-</td></tr>
-<tr><td>
-
-[str\_ensure\_chinese(str)](./sic-util.str_ensure_chinese.md)
-
-
-</td><td>
-
-函数从输入字符串中删除所有非中文字符。
-
-
-</td></tr>
-<tr><td>
-
-[str\_ensure\_prefix(s, prefix)](./sic-util.str_ensure_prefix.md)
-
-
-</td><td>
-
-该函数确保给定的字符串具有指定的前缀。
-
-
-</td></tr>
-<tr><td>
-
-[str\_ensure\_suffix(s, suffix)](./sic-util.str_ensure_suffix.md)
-
-
-</td><td>
-
-该函数确保给定的字符串以指定的后缀结尾。
-
-
-</td></tr>
-<tr><td>
-
-[str\_maybe\_number(target)](./sic-util.str_maybe_number.md)
-
-
-</td><td>
-
-该函数接受一个数字或字符串并将其作为字符串返回。
-
-
-</td></tr>
-<tr><td>
-
-[str\_no\_prefix(s, prefix)](./sic-util.str_no_prefix.md)
-
-
-</td><td>
-
-该函数从字符串中删除给定的前缀（如果存在）。
-
-
-</td></tr>
-<tr><td>
-
-[str\_no\_suffix(s, suffix)](./sic-util.str_no_suffix.md)
-
-
-</td><td>
-
-该函数从字符串中删除给定的后缀（如果存在）。
-
-
-</td></tr>
-<tr><td>
-
-[str\_random(count, radix)](./sic-util.str_random.md)
-
-
-</td><td>
-
-该函数生成指定长度和基数的随机字符串。
-
-
-</td></tr>
-<tr><td>
-
-[str\_uuid()](./sic-util.str_uuid.md)
-
-
-</td><td>
-
-生成 UUID 字符串。
+该函数将 RGB 颜色数组转换为十六进制颜色代码。
 
 
 </td></tr>
