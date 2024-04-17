@@ -5,6 +5,6 @@ pages:
     - mv .public public
   artifacts:
     paths:
-      - public/dist
+      - public
   only:
     - main # 部署触发的分支，可根据需要修改
