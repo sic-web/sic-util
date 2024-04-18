@@ -5,6 +5,7 @@ var cityOptions = require('./modules/cityOptions.js');
 var color = require('./modules/color.js');
 var demo = require('./modules/demo.js');
 var file = require('./modules/file.js');
+var temporary = require('./modules/temporary.js');
 
 
 
@@ -17,3 +18,4 @@ exports.reduce_opacity = color.reduce_opacity;
 exports.rgb_to_hex = color.rgb_to_hex;
 exports.demo = demo.demo;
 exports.file_calculate_md5 = file.file_calculate_md5;
+exports.tem_compare_version = temporary.tem_compare_version;

@@ -116,4 +116,13 @@ Description
 
 
 </td></tr>
+<tr><td>
+
+[tem\_compare\_version(version1, version2)](./sic-util.tem_compare_version.md)
+
+
+</td><td>
+
+
+</td></tr>
 </tbody></table>
