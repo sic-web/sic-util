@@ -1,8 +1,10 @@
 {
   "name": "sic-util",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "sicUtils by zijin",
   "type": "module",
+  "author": "",
+  "license": "MIT",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
@@ -18,8 +20,13 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
-  "author": "",
-  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
   "sideEffects": false,
   "files": [
     "dist"
@@ -33,8 +40,7 @@
     }
   },
   "dependencies": {
-    "number-precision": "^1.6.0",
-    "tsc": "^2.0.4"
+    "number-precision": "^1.6.0"
   },
   "devDependencies": {
     "@microsoft/api-documenter": "^7.24.2",
@@ -56,12 +62,5 @@
     "typescript": "^5.4.5",
     "vitepress": "^1.1.0",
     "vitest": "^1.5.0"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
-    }
   }
 }
