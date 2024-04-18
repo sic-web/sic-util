@@ -24,6 +24,6 @@ declare const rgb_to_hex: (rgb: RgbColor) => string;
  * @param  {number} opacity 透明度
  * @returns 十六进制颜色代码
  */
-declare const get_multiple_color: (value: string | RgbColor, opacity: number) => string;
+declare const get_multiple_color: (value: string | null, opacity: number) => string;
 
 export { get_multiple_color, hex_to_rgb, reduce_opacity, rgb_to_hex };

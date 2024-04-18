@@ -41,13 +41,13 @@ const rgb_to_hex = (rgb) => {
 const get_multiple_color = (value, opacity) => {
     let rgb;
     if (value === null) {
-        return value;
+        return "#feefcf";
     }
-    else if (typeof value === "string") {
+    if (value.startsWith("#")) {
         rgb = hex_to_rgb(value);
     }
     else {
-        rgb = value;
+        rgb = value.match(/\d+/g).map(Number);
     }
     const multipleColor = reduce_opacity(rgb, opacity);
     const hexColor = rgb_to_hex(multipleColor);

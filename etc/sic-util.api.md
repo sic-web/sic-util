@@ -7,11 +7,11 @@
 // @public
 export const demo: () => boolean;
 
+// @public
+export const get_multiple_color: (value: string | null, opacity: number) => string;
+
 // Warning: (ae-forgotten-export) The symbol "RgbColor" needs to be exported by the entry point index.d.ts
 //
-// @public
-export const get_multiple_color: (value: string | RgbColor, opacity: number) => string;
-
 // @public
 export const hex_to_rgb: (hex: string) => RgbColor;
 

@@ -9,7 +9,7 @@
 **Signature:**
 
 ```typescript
-get_multiple_color: (value: string | RgbColor, opacity: number) => string
+get_multiple_color: (value: string | null, opacity: number) => string
 ```
 
 ## Parameters
@@ -37,7 +37,7 @@ value
 
 </td><td>
 
-string \| RgbColor
+string \| null
 
 
 </td><td>
