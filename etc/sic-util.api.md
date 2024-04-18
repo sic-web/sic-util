@@ -42,6 +42,9 @@ export const rgb_to_hex: (rgb: RgbColor) => string;
 // @public (undocumented)
 export const tem_compare_version: (version1: string, version2: string) => boolean;
 
+// @public
+export const win_dynamic_fontSize: () => void;
+
 // (No @packageDocumentation comment for this package)
 
 ```

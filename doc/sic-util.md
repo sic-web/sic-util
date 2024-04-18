@@ -125,4 +125,15 @@ Description
 
 
 </td></tr>
+<tr><td>
+
+[win\_dynamic\_fontSize()](./sic-util.win_dynamic_fontsize.md)
+
+
+</td><td>
+
+函数“win\_dynamic\_fontSize”根据当前屏幕宽度计算并设置文档的字体大小。
+
+
+</td></tr>
 </tbody></table>

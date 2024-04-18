@@ -641,6 +641,30 @@
             }
           ],
           "name": "tem_compare_version"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!win_dynamic_fontSize:function(1)",
+          "docComment": "/**\n * 函数“win_dynamic_fontSize”根据当前屏幕宽度计算并设置文档的字体大小。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "win_dynamic_fontSize: () => "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/window.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "win_dynamic_fontSize"
         }
       ]
     }
