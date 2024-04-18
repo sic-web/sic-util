@@ -1,7 +1,7 @@
 type RgbColor = [number, number, number, number?];
-type ResourceList = {
+type ResourceItem = {
     resourceId: number;
     resourceName?: string;
-}[];
+};
 
-export type { ResourceList, RgbColor };
+export type { ResourceItem, RgbColor };

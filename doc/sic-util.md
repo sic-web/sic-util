@@ -41,6 +41,17 @@ Description
 </td></tr>
 <tr><td>
 
+[city\_options()](./sic-util.city_options.md)
+
+
+</td><td>
+
+城市选择器 <Cascader/> 组件内使用 options=<!-- -->{<!-- -->cityOptions<!-- -->} 引入省市区
+
+
+</td></tr>
+<tr><td>
+
 [demo()](./sic-util.demo.md)
 
 

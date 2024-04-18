@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import type { ResourceList } from "../types";
+import type { ResourceItem } from "../types";
 /**
  * 生成TraceId
  * @param {string} origin 请求源（请求发起方）
@@ -34,11 +34,11 @@ export const author_traceId = (origin: string, url: string): string => {
 
 /**
  * 严格匹配当前按钮权限
- * @param {ResourceList} list 当前的页面权限
+ * @param {ResourceItem[]} list 当前的页面权限
  * @param {number} id 当前的按钮权限
  * @returns {boolean} 是否存在该权限 true/false
  */
-export const author_strict = (list: ResourceList, id: number) => {
+export const author_strict = (list: ResourceItem[], id: number) => {
   let isShow = false;
   isShow = list?.some((item) => item?.resourceId === id);
   return isShow;

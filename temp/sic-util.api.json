@@ -183,8 +183,12 @@
             },
             {
               "kind": "Reference",
-              "text": "ResourceList",
-              "canonicalReference": "sic-util!~ResourceList:type"
+              "text": "ResourceItem",
+              "canonicalReference": "sic-util!~ResourceItem:type"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
             },
             {
               "kind": "Content",
@@ -205,8 +209,8 @@
           ],
           "fileUrlPath": "dist/types/modules/author.d.ts",
           "returnTypeTokenRange": {
-            "startIndex": 5,
-            "endIndex": 6
+            "startIndex": 6,
+            "endIndex": 7
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
@@ -215,15 +219,15 @@
               "parameterName": "list",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
-                "endIndex": 2
+                "endIndex": 3
               },
               "isOptional": false
             },
             {
               "parameterName": "id",
               "parameterTypeTokenRange": {
-                "startIndex": 3,
-                "endIndex": 4
+                "startIndex": 4,
+                "endIndex": 5
               },
               "isOptional": false
             }
@@ -286,6 +290,30 @@
             }
           ],
           "name": "author_traceId"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!city_options:function(1)",
+          "docComment": "/**\n * 城市选择器 <Cascader/> 组件内使用 options={cityOptions} 引入省市区\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "city_options: () => "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    label: any;\n    value: any;\n    children: any;\n}[]"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/cityOptions.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "city_options"
         },
         {
           "kind": "Function",

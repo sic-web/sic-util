@@ -4,13 +4,20 @@
 
 ```ts
 
-// Warning: (ae-forgotten-export) The symbol "ResourceList" needs to be exported by the entry point index.d.ts
+// Warning: (ae-forgotten-export) The symbol "ResourceItem" needs to be exported by the entry point index.d.ts
 //
 // @public
-export const author_strict: (list: ResourceList, id: number) => boolean;
+export const author_strict: (list: ResourceItem[], id: number) => boolean;
 
 // @public
 export const author_traceId: (origin: string, url: string) => string;
+
+// @public
+export const city_options: () => {
+    label: any;
+    value: any;
+    children: any;
+}[];
 
 // @public
 export const demo: () => boolean;

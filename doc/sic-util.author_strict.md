@@ -9,7 +9,7 @@
 **Signature:**
 
 ```typescript
-author_strict: (list: ResourceList, id: number) => boolean
+author_strict: (list: ResourceItem[], id: number) => boolean
 ```
 
 ## Parameters
@@ -37,7 +37,7 @@ list
 
 </td><td>
 
-ResourceList
+ResourceItem\[\]
 
 
 </td><td>

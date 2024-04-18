@@ -1,6 +1,6 @@
 {
   "name": "sic-util",
-  "version": "1.0.10",
+  "version": "0.0.5",
   "description": "sicUtils by zijin",
   "type": "module",
   "author": "",
@@ -40,6 +40,7 @@
     }
   },
   "dependencies": {
+    "china-division": "^2.7.0",
     "number-precision": "^1.6.0",
     "uuid": "^9.0.1"
   },
