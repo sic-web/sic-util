@@ -4,6 +4,14 @@
 
 ```ts
 
+// Warning: (ae-forgotten-export) The symbol "ResourceList" needs to be exported by the entry point index.d.ts
+//
+// @public
+export const author_strict: (list: ResourceList, id: number) => boolean;
+
+// @public
+export const author_traceId: (origin: string, url: string) => string;
+
 // @public
 export const demo: () => boolean;
 

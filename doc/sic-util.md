@@ -19,6 +19,28 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+[author\_strict(list, id)](./sic-util.author_strict.md)
+
+
+</td><td>
+
+严格匹配当前按钮权限
+
+
+</td></tr>
+<tr><td>
+
+[author\_traceId(origin, url)](./sic-util.author_traceid.md)
+
+
+</td><td>
+
+生成TraceId
+
+
+</td></tr>
+<tr><td>
+
 [demo()](./sic-util.demo.md)
 
 

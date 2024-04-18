@@ -1,6 +1,6 @@
 {
   "name": "sic-util",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "sicUtils by zijin",
   "type": "module",
   "author": "",
@@ -40,7 +40,8 @@
     }
   },
   "dependencies": {
-    "number-precision": "^1.6.0"
+    "number-precision": "^1.6.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@microsoft/api-documenter": "^7.24.2",
@@ -51,6 +52,7 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@types/node": "^20.12.7",
+    "@types/uuid": "^9.0.8",
     "eslint": "^9.0.0",
     "fast-glob": "^3.3.2",
     "rollup": "^4.14.3",
