@@ -16,5 +16,53 @@ const tem_compare_version = (version1, version2) => {
     }
     return true;
 };
+/**
+ * 新的表头数据转译
+ * @param {KeyVal} keyVal 接口返回的存在的表头
+ * @param {TableHeaderItem} cache 存储
+ * @param {TableHeaderItem} initial 默认
+ */
+const tem_get_tableHeader = (keyVal, cache, initial) => {
+    const returnList = [];
+    const transformList = [];
+    if (keyVal) {
+        Object.keys(keyVal)?.forEach((key) => {
+            const item = {};
+            item.key = key;
+            item.name = keyVal[key];
+            transformList.push(item);
+        });
+    }
+    transformList.forEach((i) => {
+        initial?.forEach((j) => {
+            if (cache?.length > 0 && initial?.length === cache?.length) {
+                cache?.forEach((k) => {
+                    if (i?.key === j?.key && i?.key === k?.key) {
+                        i = { ...i, ...j, ...k };
+                        i.width = j?.width;
+                        i.sort = k?.sort ? k?.sort : j.sort;
+                        i.selected = k?.selected === undefined ? true : k?.selected;
+                        returnList.push(i);
+                    }
+                });
+            }
+            else {
+                if (i?.key === j?.key) {
+                    i = { ...i, ...j };
+                    i.selected = true;
+                    returnList.push(i);
+                }
+            }
+        });
+    });
+    if (initial[initial.length - 1]?.key === "operate") {
+        returnList.push(initial[initial.length - 1]);
+    }
+    returnList.sort((a, b) => {
+        return (a?.sort ?? 1) - (b?.sort ?? 2);
+    });
+    return returnList;
+};
 
 exports.tem_compare_version = tem_compare_version;
+exports.tem_get_tableHeader = tem_get_tableHeader;

@@ -20,4 +20,5 @@ exports.rgb_to_hex = color.rgb_to_hex;
 exports.demo = demo.demo;
 exports.file_calculate_md5 = file.file_calculate_md5;
 exports.tem_compare_version = temporary.tem_compare_version;
+exports.tem_get_tableHeader = temporary.tem_get_tableHeader;
 exports.win_dynamic_fontSize = window.win_dynamic_fontSize;

@@ -644,6 +644,95 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!tem_get_tableHeader:function(1)",
+          "docComment": "/**\n * 新的表头数据转译\n *\n * @param keyVal - 接口返回的存在的表头\n *\n * @param cache - 存储\n *\n * @param initial - 默认\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "tem_get_tableHeader: (keyVal: "
+            },
+            {
+              "kind": "Reference",
+              "text": "KeyVal",
+              "canonicalReference": "sic-util!~KeyVal:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", cache: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TableHeaderItem",
+              "canonicalReference": "sic-util!~TableHeaderItem:type"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": ", initial: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TableHeaderItem",
+              "canonicalReference": "sic-util!~TableHeaderItem:type"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "TableHeaderItem",
+              "canonicalReference": "sic-util!~TableHeaderItem:type"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/temporary.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 11
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "keyVal",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "cache",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "initial",
+              "parameterTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 8
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "tem_get_tableHeader"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!win_dynamic_fontSize:function(1)",
           "docComment": "/**\n * 函数“win_dynamic_fontSize”根据当前屏幕宽度计算并设置文档的字体大小。\n */\n",
           "excerptTokens": [

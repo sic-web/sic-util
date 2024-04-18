@@ -42,6 +42,12 @@ export const rgb_to_hex: (rgb: RgbColor) => string;
 // @public (undocumented)
 export const tem_compare_version: (version1: string, version2: string) => boolean;
 
+// Warning: (ae-forgotten-export) The symbol "KeyVal" needs to be exported by the entry point index.d.ts
+// Warning: (ae-forgotten-export) The symbol "TableHeaderItem" needs to be exported by the entry point index.d.ts
+//
+// @public
+export const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], initial: TableHeaderItem[]) => TableHeaderItem[];
+
 // @public
 export const win_dynamic_fontSize: () => void;
 

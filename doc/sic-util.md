@@ -127,6 +127,17 @@ Description
 </td></tr>
 <tr><td>
 
+[tem\_get\_tableHeader(keyVal, cache, initial)](./sic-util.tem_get_tableheader.md)
+
+
+</td><td>
+
+新的表头数据转译
+
+
+</td></tr>
+<tr><td>
+
 [win\_dynamic\_fontSize()](./sic-util.win_dynamic_fontsize.md)
 
 
