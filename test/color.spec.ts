@@ -22,10 +22,10 @@ describe("color", () => {
   it("get_multiple_color", () => {
     const source1 = "#fff8e8";
     const source2 = "#fff1d2";
-    const source3 = "#45795f";
+    const source3 = "#ab785d";
     const res1 = get_multiple_color("#feb71d", 0.1);
     const res2 = get_multiple_color("#feb71d", 0.2);
-    const res3 = get_multiple_color([22, 88, 55], 0.8);
+    const res3 = get_multiple_color("rgb(150, 86, 53)", 0.8);
     expect(res1).toEqual(source1);
     expect(res2).toEqual(source2);
     expect(res3).toEqual(source3);

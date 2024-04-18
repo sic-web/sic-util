@@ -1,6 +1,6 @@
 {
   "name": "sic-util",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "sicUtils by zijin",
   "type": "module",
   "main": "./dist/cjs/index.js",

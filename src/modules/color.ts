@@ -42,16 +42,17 @@ export const rgb_to_hex = (rgb: RgbColor): string => {
  * @param  {number} opacity 透明度
  * @returns 十六进制颜色代码
  */
-export const get_multiple_color = (value: string | RgbColor, opacity: number): string => {
-  let rgb: RgbColor;
+export const get_multiple_color = (value: string | null, opacity: number): string => {
+  let rgb: RgbColor | number[];
   if (value === null) {
-    return value;
-  } else if (typeof value === "string") {
+    return "#feefcf";
+  }
+  if (value.startsWith("#")) {
     rgb = hex_to_rgb(value);
   } else {
-    rgb = value;
+    rgb = value.match(/\d+/g)!.map(Number);
   }
-  const multipleColor = reduce_opacity(rgb, opacity);
+  const multipleColor = reduce_opacity(rgb as RgbColor, opacity);
   const hexColor = rgb_to_hex(multipleColor);
   return hexColor;
 };
