@@ -341,6 +341,52 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!file_calculate_md5:function(1)",
+          "docComment": "/**\n * 函数“file_calculate_md5”读取一个文件，计算其 MD5 哈希值，并将哈希值作为 Promise 返回。\n *\n * @param file - `file_calculate_md5` 函数将文件作为输入，并使用 CryptoJS 库计算文件内容的 MD5 哈希值。`file` 参数表示要计算 MD5 哈希值的文件。\n *\n * @returns 一旦文件被读取并处理完毕，`file_calculate_md5` 函数就会返回一个 Promise，该 Promise 会使用文件内容的 MD5 哈希值进行解析。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "file_calculate_md5: (file: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<unknown>"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/file.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "file",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "file_calculate_md5"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!get_multiple_color:function(1)",
           "docComment": "/**\n * 该函数将颜色转成一种颜色的多种透明度的\n *\n * @param value - rgb或者十六进制\n *\n * @param opacity - 透明度\n *\n * @returns 十六进制颜色代码\n */\n",
           "excerptTokens": [

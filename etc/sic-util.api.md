@@ -23,6 +23,9 @@ export const city_options: () => {
 export const demo: () => boolean;
 
 // @public
+export const file_calculate_md5: (file: any) => Promise<unknown>;
+
+// @public
 export const get_multiple_color: (value: string | null, opacity: number) => string;
 
 // Warning: (ae-forgotten-export) The symbol "RgbColor" needs to be exported by the entry point index.d.ts

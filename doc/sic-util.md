@@ -63,6 +63,17 @@ Description
 </td></tr>
 <tr><td>
 
+[file\_calculate\_md5(file)](./sic-util.file_calculate_md5.md)
+
+
+</td><td>
+
+函数“file\_calculate\_md5”读取一个文件，计算其 MD5 哈希值，并将哈希值作为 Promise 返回。
+
+
+</td></tr>
+<tr><td>
+
 [get\_multiple\_color(value, opacity)](./sic-util.get_multiple_color.md)
 
 

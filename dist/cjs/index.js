@@ -4,6 +4,7 @@ var author = require('./modules/author.js');
 var cityOptions = require('./modules/cityOptions.js');
 var color = require('./modules/color.js');
 var demo = require('./modules/demo.js');
+var file = require('./modules/file.js');
 
 
 
@@ -15,3 +16,4 @@ exports.hex_to_rgb = color.hex_to_rgb;
 exports.reduce_opacity = color.reduce_opacity;
 exports.rgb_to_hex = color.rgb_to_hex;
 exports.demo = demo.demo;
+exports.file_calculate_md5 = file.file_calculate_md5;

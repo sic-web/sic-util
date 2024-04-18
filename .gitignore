@@ -2,4 +2,3 @@ node_modules
 temp
 trace.log
 cache
-dist
