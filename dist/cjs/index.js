@@ -22,6 +22,7 @@ exports.demo = demo.demo;
 exports.file_calculate_md5 = file.file_calculate_md5;
 exports.num_expand_100 = number.num_expand_100;
 exports.num_reduce_100 = number.num_reduce_100;
+exports.num_text = number.num_text;
 exports.tem_compare_version = temporary.tem_compare_version;
 exports.tem_get_tableHeader = temporary.tem_get_tableHeader;
 exports.win_dynamic_fontSize = window.win_dynamic_fontSize;

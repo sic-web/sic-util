@@ -118,6 +118,17 @@ Description
 </td></tr>
 <tr><td>
 
+[num\_text(number, type)](./sic-util.num_text.md)
+
+
+</td><td>
+
+ 数字转中文数码
+
+
+</td></tr>
+<tr><td>
+
 [reduce\_opacity(rgb, opacity)](./sic-util.reduce_opacity.md)
 
 

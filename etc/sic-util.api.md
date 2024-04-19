@@ -40,6 +40,9 @@ export const num_expand_100: (amount: number | string, accuracy?: number) => str
 export const num_reduce_100: (amount: any) => any;
 
 // @public
+export const num_text: (number: number | string | undefined, type?: string) => string | false;
+
+// @public
 export const reduce_opacity: (rgb: RgbColor, opacity: number) => RgbColor;
 
 // @public

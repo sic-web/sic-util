@@ -584,6 +584,63 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!num_text:function(1)",
+          "docComment": "/**\n * @description 数字转中文数码\n *\n * @param num - 数字[正整数]\n *\n * @param type - 文本类型，lower|upper，默认upper\n *\n * @example\n *\n * number2text(100000000) => \"壹亿元整\"\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "num_text: (number: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ", type?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "string | false"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/number.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "number",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "type",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "num_text"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!reduce_opacity:function(1)",
           "docComment": "/**\n * 函数“reduce_opacity”将十六进制颜色透明度改变，得到同等规则下的颜色。\n *\n * @param rgb - RGB颜色代码，例如 [ 22, 34, 55 ]\n *\n * @returns - RGB颜色代码，例如 [ 69, 78, 95 ]\n */\n",
           "excerptTokens": [
