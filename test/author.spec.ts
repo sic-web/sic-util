@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
 import { author_traceId, author_strict } from "../src/modules/author";
-import { ResourceItem } from "src/types";
 
 describe("author", () => {
   it("author_traceId", () => {

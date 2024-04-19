@@ -486,6 +486,104 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!num_expand_100:function(1)",
+          "docComment": "/**\n * 单位扩大两位，一般用于（分->元）（百分数->数）\n *\n * @param amount - 当前金额\n *\n * @param accuracy - 保留几位小数，默认2位\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "num_expand_100: (amount: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string"
+            },
+            {
+              "kind": "Content",
+              "text": ", accuracy?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "string | number"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/number.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "amount",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "accuracy",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "num_expand_100"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!num_reduce_100:function(1)",
+          "docComment": "/**\n * 单位缩小两位，一般用于（元->分）（数->百分数）\n *\n * @param amount - 当前金额\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "num_reduce_100: (amount: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/number.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "amount",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "num_reduce_100"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!reduce_opacity:function(1)",
           "docComment": "/**\n * 函数“reduce_opacity”将十六进制颜色透明度改变，得到同等规则下的颜色。\n *\n * @param rgb - RGB颜色代码，例如 [ 22, 34, 55 ]\n *\n * @returns - RGB颜色代码，例如 [ 69, 78, 95 ]\n */\n",
           "excerptTokens": [

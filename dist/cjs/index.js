@@ -5,6 +5,7 @@ var cityOptions = require('./modules/cityOptions.js');
 var color = require('./modules/color.js');
 var demo = require('./modules/demo.js');
 var file = require('./modules/file.js');
+var number = require('./modules/number.js');
 var temporary = require('./modules/temporary.js');
 var window = require('./modules/window.js');
 
@@ -19,6 +20,8 @@ exports.reduce_opacity = color.reduce_opacity;
 exports.rgb_to_hex = color.rgb_to_hex;
 exports.demo = demo.demo;
 exports.file_calculate_md5 = file.file_calculate_md5;
+exports.num_expand_100 = number.num_expand_100;
+exports.num_reduce_100 = number.num_reduce_100;
 exports.tem_compare_version = temporary.tem_compare_version;
 exports.tem_get_tableHeader = temporary.tem_get_tableHeader;
 exports.win_dynamic_fontSize = window.win_dynamic_fontSize;

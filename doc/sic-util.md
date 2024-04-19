@@ -96,6 +96,28 @@ Description
 </td></tr>
 <tr><td>
 
+[num\_expand\_100(amount, accuracy)](./sic-util.num_expand_100.md)
+
+
+</td><td>
+
+单位扩大两位，一般用于（分-<!-- -->&gt;<!-- -->元）（百分数-<!-- -->&gt;<!-- -->数）
+
+
+</td></tr>
+<tr><td>
+
+[num\_reduce\_100(amount)](./sic-util.num_reduce_100.md)
+
+
+</td><td>
+
+单位缩小两位，一般用于（元-<!-- -->&gt;<!-- -->分）（数-<!-- -->&gt;<!-- -->百分数）
+
+
+</td></tr>
+<tr><td>
+
 [reduce\_opacity(rgb, opacity)](./sic-util.reduce_opacity.md)
 
 
