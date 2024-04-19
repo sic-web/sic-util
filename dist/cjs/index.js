@@ -8,6 +8,7 @@ var file = require('./modules/file.js');
 var number = require('./modules/number.js');
 var system = require('./modules/system.js');
 var temporary = require('./modules/temporary.js');
+var validation = require('./modules/validation.js');
 var window = require('./modules/window.js');
 
 
@@ -27,4 +28,11 @@ exports.num_text = number.num_text;
 exports.sys_print = system.sys_print;
 exports.tem_compare_version = temporary.tem_compare_version;
 exports.tem_get_tableHeader = temporary.tem_get_tableHeader;
+exports.val_edgeSpace = validation.val_edgeSpace;
+exports.val_email = validation.val_email;
+exports.val_empty = validation.val_empty;
+exports.val_idCard = validation.val_idCard;
+exports.val_num = validation.val_num;
+exports.val_phone = validation.val_phone;
+exports.val_space = validation.val_space;
 exports.win_dynamic_fontSize = window.win_dynamic_fontSize;

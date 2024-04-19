@@ -182,6 +182,83 @@ Description
 </td></tr>
 <tr><td>
 
+[val\_edgeSpace(value)](./sic-util.val_edgespace.md)
+
+
+</td><td>
+
+函数"val\_space"检查 TypeScript 中的给定值头尾是否有空格。
+
+
+</td></tr>
+<tr><td>
+
+[val\_email(value)](./sic-util.val_email.md)
+
+
+</td><td>
+
+函数"validation\_email"检查 TypeScript 中的给定值是否是邮箱。
+
+
+</td></tr>
+<tr><td>
+
+[val\_empty(value)](./sic-util.val_empty.md)
+
+
+</td><td>
+
+函数"val\_space"检查 TypeScript 中的给定值是否为空。
+
+
+</td></tr>
+<tr><td>
+
+[val\_idCard(value)](./sic-util.val_idcard.md)
+
+
+</td><td>
+
+函数"validation\_idCard"检查 TypeScript 中的给定值是否是身份证号码。
+
+
+</td></tr>
+<tr><td>
+
+[val\_num(value)](./sic-util.val_num.md)
+
+
+</td><td>
+
+函数"validation\_num"检查 TypeScript 中的给定值是否是数字。
+
+
+</td></tr>
+<tr><td>
+
+[val\_phone(value)](./sic-util.val_phone.md)
+
+
+</td><td>
+
+函数"validation\_phone"检查 TypeScript 中的给定值是否是手机号。
+
+
+</td></tr>
+<tr><td>
+
+[val\_space(value)](./sic-util.val_space.md)
+
+
+</td><td>
+
+函数"val\_space"检查 TypeScript 中的给定值是否有空格。
+
+
+</td></tr>
+<tr><td>
+
 [win\_dynamic\_fontSize()](./sic-util.win_dynamic_fontsize.md)
 
 

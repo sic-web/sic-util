@@ -929,6 +929,293 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!val_edgeSpace:function(1)",
+          "docComment": "/**\n * 函数\"val_space\"检查 TypeScript 中的给定值头尾是否有空格。\n *\n * @param value - \"val_space\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"val_space\" 返回一个布尔值，指示输入的 \"value\" 头尾是否有空格。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_edgeSpace: (value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "val_edgeSpace"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_email:function(1)",
+          "docComment": "/**\n * 函数\"validation_email\"检查 TypeScript 中的给定值是否是邮箱。\n *\n * @param value - \"validation_email\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"validation_email\" 返回一个布尔值，指示输入的 \"value\" 是否是邮箱。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_email: (value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "val_email"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_empty:function(1)",
+          "docComment": "/**\n * 函数\"val_space\"检查 TypeScript 中的给定值是否为空。\n *\n * @param value - \"val_space\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"val_space\" 返回一个布尔值，指示输入的 \"value\" 头尾是否有空格。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_empty: (value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "val_empty"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_idCard:function(1)",
+          "docComment": "/**\n * 函数\"validation_idCard\"检查 TypeScript 中的给定值是否是身份证号码。\n *\n * @param value - \"validation_idCard\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"validation_idCard\" 返回一个布尔值，指示输入的 \"value\" 是否是身份证号码。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_idCard: (value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "val_idCard"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_num:function(1)",
+          "docComment": "/**\n * 函数\"validation_num\"检查 TypeScript 中的给定值是否是数字。\n *\n * @param value - `validation_num` 函数中的 `value` 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数“validation_num”返回一个布尔值，指示输入的“value”是否是数字。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_num: (value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "val_num"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_phone:function(1)",
+          "docComment": "/**\n * 函数\"validation_phone\"检查 TypeScript 中的给定值是否是手机号。\n *\n * @param value - \"validation_phone\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"validation_phone\" 返回一个布尔值，指示输入的 \"value\" 是否是手机号。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_phone: (value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "val_phone"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_space:function(1)",
+          "docComment": "/**\n * 函数\"val_space\"检查 TypeScript 中的给定值是否有空格。\n *\n * @param value - \"val_space\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"val_space\" 返回一个布尔值，指示输入的 \"value\" 是否有空格。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_space: (value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "val_space"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!win_dynamic_fontSize:function(1)",
           "docComment": "/**\n * 函数“win_dynamic_fontSize”根据当前屏幕宽度计算并设置文档的字体大小。\n */\n",
           "excerptTokens": [

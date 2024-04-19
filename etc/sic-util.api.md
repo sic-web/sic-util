@@ -63,6 +63,27 @@ export const tem_compare_version: (version1: string, version2: string) => boolea
 export const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], initial: TableHeaderItem[]) => TableHeaderItem[];
 
 // @public
+export const val_edgeSpace: (value?: any) => boolean;
+
+// @public
+export const val_email: (value?: any) => boolean;
+
+// @public
+export const val_empty: (value?: any) => boolean;
+
+// @public
+export const val_idCard: (value?: any) => boolean;
+
+// @public
+export const val_num: (value?: any) => boolean;
+
+// @public
+export const val_phone: (value?: any) => boolean;
+
+// @public
+export const val_space: (value?: any) => boolean;
+
+// @public
 export const win_dynamic_fontSize: () => void;
 
 // (No @packageDocumentation comment for this package)
