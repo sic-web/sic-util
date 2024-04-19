@@ -11,15 +11,16 @@ interface IndexTree {
 }
 
 function copyright() {
-  const start = 2023;
+  const start = 2024;
   const now = new Date().getFullYear();
   const year = now === start ? "2024" : `${start}-${now}`;
   return `Copyright © ${year} zijin`;
 }
 
 function resolveTitle(title: string) {
-  title = title === "utils" ? title : title.replace("utils.", "");
+  title = title === "sic-util" ? title : title.replace("sic-util.", "");
   title = title.split(".").join(" ");
+
   return title;
 }
 
