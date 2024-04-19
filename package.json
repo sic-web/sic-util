@@ -1,6 +1,6 @@
 {
   "name": "sic-util",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "sic utils by zijin",
   "type": "module",
   "author": "",
@@ -43,6 +43,7 @@
     "china-division": "^2.7.0",
     "crypto-js": "^4.2.0",
     "number-precision": "^1.6.0",
+    "print-js": "^1.6.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {

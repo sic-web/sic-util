@@ -742,6 +742,47 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!sys_print:function(1)",
+          "docComment": "/**\n * 函数“sys_print”接受具有“url”属性的对象，并使用它通过“printJS”函数打印文档。\n *\n * @param props - `props` 参数是一个具有单个属性 `url` 的对象，该属性是一个字符串。\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "sys_print: (props: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    url: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/system.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "props",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "sys_print"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!tem_compare_version:function(1)",
           "docComment": "",
           "excerptTokens": [
