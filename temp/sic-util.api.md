@@ -25,6 +25,14 @@ export const demo: () => boolean;
 // @public
 export const file_calculate_md5: (file: any) => Promise<unknown>;
 
+// Warning: (ae-forgotten-export) The symbol "IProps" needs to be exported by the entry point index.d.ts
+//
+// @public
+export const file_load: (props: IProps) => Promise<void> | undefined;
+
+// @public
+export const file_open: (props: IProps) => void;
+
 // @public
 export const get_multiple_color: (value: string | null, opacity: number) => string;
 

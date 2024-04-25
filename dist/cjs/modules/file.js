@@ -23,5 +23,51 @@ const file_calculate_md5 = (file) => {
         reader.readAsArrayBuffer(file);
     });
 };
+/**
+ * 函数 "file_open" 打开一个文件，如果该文件再浏览器无法预览，会实现下载功能
+ * @param {string} url 必填参数，传入的文件的url
+ * @param {string=} name 可选参数，传入的文件的文件名。如果不提供，默认使用URL中的文件名
+ */
+const file_open = (props) => {
+    const { url, name } = props;
+    if (typeof url === "string" && url !== "") {
+        const fileName = url?.split("/")?.[url?.split("/")?.length - 1];
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = name ?? fileName;
+        link.addEventListener("error", () => {
+            link.remove();
+        });
+        link.addEventListener("click", () => {
+            link.remove();
+        });
+        document.body.appendChild(link);
+        link.click();
+    }
+};
+/**
+ * 函数 "file_load" 下载一个文件
+ * @param {string} url 必填参数，传入的文件的url
+ * @param {string=} name 可选参数，传入的文件的文件名。如果不提供，默认使用URL中的文件名
+ */
+const file_load = (props) => {
+    const { url, name } = props;
+    if (typeof url === "string" && url !== "") {
+        const fileName = url?.split("/")?.[url?.split("/")?.length - 1];
+        if (typeof url === "string" && url !== "") {
+            return fetch(url)
+                .then((response) => response.blob())
+                .then((blob) => {
+                const link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = name ?? fileName;
+                link.click();
+                URL.revokeObjectURL(link.href);
+            });
+        }
+    }
+};
 
 exports.file_calculate_md5 = file_calculate_md5;
+exports.file_load = file_load;
+exports.file_open = file_open;

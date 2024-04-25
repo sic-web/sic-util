@@ -387,6 +387,95 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!file_load:function(1)",
+          "docComment": "/**\n * 函数 \"file_load\" 下载一个文件\n *\n * @param url - 必填参数，传入的文件的url\n *\n * @param name - 可选参数，传入的文件的文件名。如果不提供，默认使用URL中的文件名\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "file_load: (props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProps",
+              "canonicalReference": "sic-util!~IProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void> | undefined"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/file.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "props",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "file_load"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!file_open:function(1)",
+          "docComment": "/**\n * 函数 \"file_open\" 打开一个文件，如果该文件再浏览器无法预览，会实现下载功能\n *\n * @param url - 必填参数，传入的文件的url\n *\n * @param name - 可选参数，传入的文件的文件名。如果不提供，默认使用URL中的文件名\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "file_open: (props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProps",
+              "canonicalReference": "sic-util!~IProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/file.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "props",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "file_open"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!get_multiple_color:function(1)",
           "docComment": "/**\n * 该函数将颜色转成一种颜色的多种透明度的\n *\n * @param value - rgb或者十六进制\n *\n * @param opacity - 透明度\n *\n * @returns 十六进制颜色代码\n */\n",
           "excerptTokens": [

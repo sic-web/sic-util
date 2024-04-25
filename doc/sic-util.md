@@ -74,6 +74,28 @@ Description
 </td></tr>
 <tr><td>
 
+[file\_load(props)](./sic-util.file_load.md)
+
+
+</td><td>
+
+函数 "file\_load" 下载一个文件
+
+
+</td></tr>
+<tr><td>
+
+[file\_open(props)](./sic-util.file_open.md)
+
+
+</td><td>
+
+函数 "file\_open" 打开一个文件，如果该文件再浏览器无法预览，会实现下载功能
+
+
+</td></tr>
+<tr><td>
+
 [get\_multiple\_color(value, opacity)](./sic-util.get_multiple_color.md)
 
 
