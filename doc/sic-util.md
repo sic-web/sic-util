@@ -151,12 +151,23 @@ Description
 </td></tr>
 <tr><td>
 
+[sys\_detectBrowser()](./sic-util.sys_detectbrowser.md)
+
+
+</td><td>
+
+函数"sys\_detectBrowser"检查浏览器版本，版本在当前系统兼容之外，将弹出提示
+
+
+</td></tr>
+<tr><td>
+
 [sys\_print(props)](./sic-util.sys_print.md)
 
 
 </td><td>
 
-函数“sys\_print”接受具有“url”属性的对象，并使用它通过“printJS”函数打印文档。
+函数"sys\_print"接受具有“url”属性的对象，并使用它通过“printJS”函数打印文档。
 
 
 </td></tr>

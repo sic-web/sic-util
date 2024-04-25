@@ -4,7 +4,7 @@
 
 ## sys\_print() function
 
-函数“sys\_print”接受具有“url”属性的对象，并使用它通过“printJS”函数打印文档。
+函数"sys\_print"接受具有“url”属性的对象，并使用它通过“printJS”函数打印文档。
 
 **Signature:**
 

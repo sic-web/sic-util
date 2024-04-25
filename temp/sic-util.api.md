@@ -49,6 +49,9 @@ export const reduce_opacity: (rgb: RgbColor, opacity: number) => RgbColor;
 export const rgb_to_hex: (rgb: RgbColor) => string;
 
 // @public
+export const sys_detectBrowser: () => void;
+
+// @public
 export const sys_print: (props: {
     url: string;
 }) => void;

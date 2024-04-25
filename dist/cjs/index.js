@@ -25,6 +25,7 @@ exports.file_calculate_md5 = file.file_calculate_md5;
 exports.num_expand_100 = number.num_expand_100;
 exports.num_reduce_100 = number.num_reduce_100;
 exports.num_text = number.num_text;
+exports.sys_detectBrowser = system.sys_detectBrowser;
 exports.sys_print = system.sys_print;
 exports.tem_compare_version = temporary.tem_compare_version;
 exports.tem_get_tableHeader = temporary.tem_get_tableHeader;
