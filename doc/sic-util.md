@@ -19,6 +19,17 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+[author\_passwordCheck(str)](./sic-util.author_passwordcheck.md)
+
+
+</td><td>
+
+计算密码强度，返回等级
+
+
+</td></tr>
+<tr><td>
+
 [author\_strict(list, id)](./sic-util.author_strict.md)
 
 

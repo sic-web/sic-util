@@ -43,3 +43,22 @@ export const author_strict = (list: ResourceItem[], id: number) => {
   isShow = list?.some((item) => item?.resourceId === id);
   return isShow;
 };
+
+/**
+ * 计算密码强度，返回等级
+ * @param {string} str 当前密码
+ * @returns {number} 强度等级
+ */
+export const author_passwordCheck = (str: string) => {
+  let level = 0;
+  if (/\d/.test(str)) {
+    level = level + 1;
+  }
+  if (/[a-zA-Z]/.test(str)) {
+    level = level + 1;
+  }
+  if (/[^a-zA-Z0-9\s]/.test(str)) {
+    level = level + 1;
+  }
+  return level;
+};

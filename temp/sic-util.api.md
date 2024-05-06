@@ -4,6 +4,9 @@
 
 ```ts
 
+// @public
+export const author_passwordCheck: (str: string) => number;
+
 // Warning: (ae-forgotten-export) The symbol "ResourceItem" needs to be exported by the entry point index.d.ts
 //
 // @public

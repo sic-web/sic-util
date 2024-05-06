@@ -14,5 +14,11 @@ declare const author_traceId: (origin: string, url: string) => string;
  * @returns {boolean} 是否存在该权限 true/false
  */
 declare const author_strict: (list: ResourceItem[], id: number) => boolean;
+/**
+ * 计算密码强度，返回等级
+ * @param {string} str 当前密码
+ * @returns {number} 强度等级
+ */
+declare const author_passwordCheck: (str: string) => number;
 
-export { author_strict, author_traceId };
+export { author_passwordCheck, author_strict, author_traceId };

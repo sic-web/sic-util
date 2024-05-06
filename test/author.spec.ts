@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { author_traceId, author_strict } from "../src/modules/author";
+import { author_traceId, author_strict, author_passwordCheck } from "../src/modules/author";
 
 describe("author", () => {
   it("author_traceId", () => {
@@ -19,5 +19,15 @@ describe("author", () => {
     expect(res1).toEqual(true);
     expect(res2).toEqual(true);
     expect(res3).toEqual(false);
+  });
+  it("author_passwordCheck", () => {
+    const res1 = author_passwordCheck("");
+    const res2 = author_passwordCheck("123");
+    const res3 = author_passwordCheck("123abcd");
+    const res4 = author_passwordCheck("123abcd!");
+    expect(res1).toEqual(0);
+    expect(res2).toEqual(1);
+    expect(res3).toEqual(2);
+    expect(res4).toEqual(3);
   });
 });

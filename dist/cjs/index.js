@@ -13,6 +13,7 @@ var window = require('./modules/window.js');
 
 
 
+exports.author_passwordCheck = author.author_passwordCheck;
 exports.author_strict = author.author_strict;
 exports.author_traceId = author.author_traceId;
 exports.city_options = cityOptions.city_options;
