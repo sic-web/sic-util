@@ -8,6 +8,7 @@ var file = require('./modules/file.js');
 var number = require('./modules/number.js');
 var system = require('./modules/system.js');
 var temporary = require('./modules/temporary.js');
+var timejs = require('./modules/timejs.js');
 var validation = require('./modules/validation.js');
 var window = require('./modules/window.js');
 
@@ -32,6 +33,7 @@ exports.sys_detectBrowser = system.sys_detectBrowser;
 exports.sys_print = system.sys_print;
 exports.tem_compare_version = temporary.tem_compare_version;
 exports.tem_get_tableHeader = temporary.tem_get_tableHeader;
+exports.timejs = timejs.timejs;
 exports.val_edgeSpace = validation.val_edgeSpace;
 exports.val_email = validation.val_email;
 exports.val_empty = validation.val_empty;

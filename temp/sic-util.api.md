@@ -4,6 +4,8 @@
 
 ```ts
 
+import dayjs from 'dayjs';
+
 // @public
 export const author_passwordCheck: (str: string) => number;
 
@@ -75,6 +77,9 @@ export const tem_compare_version: (version1: string, version2: string) => boolea
 //
 // @public
 export const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], initial: TableHeaderItem[]) => TableHeaderItem[];
+
+// @public
+export const timejs: (props?: any, props1?: any, props2?: any) => dayjs.Dayjs;
 
 // @public
 export const val_edgeSpace: (value?: any) => boolean;

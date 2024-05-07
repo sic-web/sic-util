@@ -226,6 +226,17 @@ Description
 </td></tr>
 <tr><td>
 
+[timejs(props, props1, props2)](./sic-util.timejs.md)
+
+
+</td><td>
+
+timejs 依赖于 dayjs 构建，形成管理时间的工具函数 TypeScript 中的 `timejs` 函数接受一个参数 `props`<!-- -->，并返回使用 `props` 调用 `dayjs` 的结果。
+
+
+</td></tr>
+<tr><td>
+
 [val\_edgeSpace(value)](./sic-util.val_edgespace.md)
 
 
