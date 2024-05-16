@@ -9,6 +9,17 @@ import dayjs from 'dayjs';
 // @public
 export const author_passwordCheck: (str: string) => number;
 
+// Warning: (ae-forgotten-export) The symbol "MenuInformation" needs to be exported by the entry point index.d.ts
+//
+// @public
+export const author_router_filter: (origin: MenuInformation[], local: MenuInformation[]) => ({
+    key: string | undefined;
+    menuid: number | undefined;
+    label: string | undefined;
+    resourcelist: ResourceList[] | undefined;
+    children: any;
+} | null)[];
+
 // Warning: (ae-forgotten-export) The symbol "ResourceItem" needs to be exported by the entry point index.d.ts
 //
 // @public
@@ -104,6 +115,10 @@ export const val_space: (value?: any) => boolean;
 
 // @public
 export const win_dynamic_fontSize: () => void;
+
+// Warnings were encountered during analysis:
+//
+// dist/types/modules/author.d.ts:56:5 - (ae-forgotten-export) The symbol "ResourceList" needs to be exported by the entry point index.d.ts
 
 // (No @packageDocumentation comment for this package)
 

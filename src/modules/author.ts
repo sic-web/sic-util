@@ -62,3 +62,59 @@ export const author_passwordCheck = (str: string) => {
   }
   return level;
 };
+
+/** 菜单类型 */
+interface MenuInformation {
+  menuid?: number;
+  menuId?: number;
+  parentid?: number;
+  parentId?: number;
+  parentname?: string;
+  parentName?: string;
+  resourcelist?: ResourceList[];
+  resourceList?: ResourceList[];
+  sort?: number;
+  label?: string;
+  key?: string;
+  icon?: any;
+  element?: any;
+  children?: any;
+}
+
+/** 按钮类型 */ interface ResourceList {
+  resourceId: number;
+  resourceName?: string;
+  key?: string;
+  element?: any;
+}
+/**
+ * 处理接口的路由数据，将本地的路由信息补充进去
+ * @param {Array} origin 接口的路由信息
+ * @param {Array} local 本地的路由信息
+ * @returns {Array} 适配到项目的路由树
+ */
+export const author_router_filter = (origin: MenuInformation[], local: MenuInformation[]) => {
+  return origin
+    ?.map((originItem) => {
+      const matchingItem = local?.find((targetItem) => targetItem?.menuid === originItem?.menuId);
+      if (matchingItem) {
+        const newItem = {
+          key: matchingItem?.key,
+          menuid: originItem?.menuId,
+          label: originItem?.label,
+          resourcelist: originItem?.resourceList,
+          children: originItem?.children,
+        };
+
+        if (!newItem?.children || newItem?.children?.length === 0) {
+          delete newItem?.children;
+        }
+        if (originItem?.children && originItem?.children?.length > 0) {
+          newItem.children = author_router_filter(originItem?.children, matchingItem?.children || []);
+        }
+        return newItem;
+      }
+      return null;
+    })
+    ?.filter(Boolean);
+};

@@ -30,6 +30,17 @@ Description
 </td></tr>
 <tr><td>
 
+[author\_router\_filter(origin, local)](./sic-util.author_router_filter.md)
+
+
+</td><td>
+
+处理接口的路由数据，将本地的路由信息补充进去
+
+
+</td></tr>
+<tr><td>
+
 [author\_strict(list, id)](./sic-util.author_strict.md)
 
 

@@ -215,6 +215,82 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!author_router_filter:function(1)",
+          "docComment": "/**\n * 处理接口的路由数据，将本地的路由信息补充进去\n *\n * @param origin - 接口的路由信息\n *\n * @param local - 本地的路由信息\n *\n * @returns {Array} 适配到项目的路由树\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "author_router_filter: (origin: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuInformation",
+              "canonicalReference": "sic-util!~MenuInformation:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": ", local: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuInformation",
+              "canonicalReference": "sic-util!~MenuInformation:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "({\n    key: string | undefined;\n    menuid: number | undefined;\n    label: string | undefined;\n    resourcelist: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResourceList",
+              "canonicalReference": "sic-util!~ResourceList:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[] | undefined;\n    children: any;\n} | null)[]"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/author.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "origin",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "local",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "author_router_filter"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!author_strict:function(1)",
           "docComment": "/**\n * 严格匹配当前按钮权限\n *\n * @param list - 当前的页面权限\n *\n * @param id - 当前的按钮权限\n *\n * @returns {boolean} 是否存在该权限 true/false\n */\n",
           "excerptTokens": [
