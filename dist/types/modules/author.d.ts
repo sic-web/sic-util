@@ -37,14 +37,18 @@ interface MenuInformation {
     element?: any;
     children?: any;
 }
-/** 按钮类型 */ interface ResourceList {
+/** 按钮类型 */
+interface ResourceList {
     resourceId: number;
     resourceName?: string;
     key?: string;
     element?: any;
+    more?: boolean;
 }
 /**
  * 处理接口的路由数据，将本地的路由信息补充进去
+ * 数据层面：既处理数据问题，也解决浏览器关于menuId，resourceList等字段驼峰大小写的警告
+ * 业务层面：处理的的数据存储到localstore中，便于系统使用
  * @param {Array} origin 接口的路由信息
  * @param {Array} local 本地的路由信息
  * @returns {Array} 适配到项目的路由树
@@ -56,5 +60,29 @@ declare const author_router_filter: (origin: MenuInformation[], local: MenuInfor
     resourcelist: ResourceList[] | undefined;
     children: any;
 } | null)[];
+/**
+ * 处理缓存的路由数据，将本地的路由信息补充进去
+ * 数据层面：既处理数据问题，也将DOM元素打进当前函数
+ * 业务层面：可以在当前函数中使用DOM元素，用于渲染
+ * @param {Array} origin 接口的路由信息
+ * @param {Array} local 本地的路由信息
+ * @returns {Array} 用于渲染的路由树
+ */
+declare const author_router_add: (origin: MenuInformation[], local: MenuInformation[]) => ({
+    resourcelist: ResourceList[] | undefined;
+    menuid?: number | undefined;
+    menuId?: number | undefined;
+    parentid?: number | undefined;
+    parentId?: number | undefined;
+    parentname?: string | undefined;
+    parentName?: string | undefined;
+    resourceList?: ResourceList[] | undefined;
+    sort?: number | undefined;
+    label?: string | undefined;
+    key?: string | undefined;
+    icon?: any;
+    element?: any;
+    children?: any;
+} | null)[];
 
-export { author_passwordCheck, author_router_filter, author_strict, author_traceId };
+export { author_passwordCheck, author_router_add, author_router_filter, author_strict, author_traceId };

@@ -215,8 +215,93 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!author_router_add:function(1)",
+          "docComment": "/**\n * 处理缓存的路由数据，将本地的路由信息补充进去 数据层面：既处理数据问题，也将DOM元素打进当前函数 业务层面：可以在当前函数中使用DOM元素，用于渲染\n *\n * @param origin - 接口的路由信息\n *\n * @param local - 本地的路由信息\n *\n * @returns {Array} 用于渲染的路由树\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "author_router_add: (origin: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuInformation",
+              "canonicalReference": "sic-util!~MenuInformation:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": ", local: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuInformation",
+              "canonicalReference": "sic-util!~MenuInformation:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "({\n    resourcelist: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResourceList",
+              "canonicalReference": "sic-util!~ResourceList:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[] | undefined;\n    menuid?: number | undefined;\n    menuId?: number | undefined;\n    parentid?: number | undefined;\n    parentId?: number | undefined;\n    parentname?: string | undefined;\n    parentName?: string | undefined;\n    resourceList?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResourceList",
+              "canonicalReference": "sic-util!~ResourceList:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[] | undefined;\n    sort?: number | undefined;\n    label?: string | undefined;\n    key?: string | undefined;\n    icon?: any;\n    element?: any;\n    children?: any;\n} | null)[]"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/author.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 12
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "origin",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "local",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "author_router_add"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!author_router_filter:function(1)",
-          "docComment": "/**\n * 处理接口的路由数据，将本地的路由信息补充进去\n *\n * @param origin - 接口的路由信息\n *\n * @param local - 本地的路由信息\n *\n * @returns {Array} 适配到项目的路由树\n */\n",
+          "docComment": "/**\n * 处理接口的路由数据，将本地的路由信息补充进去 数据层面：既处理数据问题，也解决浏览器关于menuId，resourceList等字段驼峰大小写的警告 业务层面：处理的的数据存储到localstore中，便于系统使用\n *\n * @param origin - 接口的路由信息\n *\n * @param local - 本地的路由信息\n *\n * @returns {Array} 适配到项目的路由树\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

@@ -81,12 +81,15 @@ interface MenuInformation {
   children?: any;
 }
 
-/** 按钮类型 */ interface ResourceList {
+/** 按钮类型 */
+interface ResourceList {
   resourceId: number;
   resourceName?: string;
   key?: string;
   element?: any;
+  more?: boolean;
 }
+
 /**
  * 处理接口的路由数据，将本地的路由信息补充进去
  * 数据层面：既处理数据问题，也解决浏览器关于menuId，resourceList等字段驼峰大小写的警告
@@ -116,6 +119,42 @@ export const author_router_filter = (origin: MenuInformation[], local: MenuInfor
         }
         return newItem;
       }
+      return null;
+    })
+    ?.filter(Boolean);
+};
+
+/**
+ * 处理缓存的路由数据，将本地的路由信息补充进去
+ * 数据层面：既处理数据问题，也将DOM元素打进当前函数
+ * 业务层面：可以在当前函数中使用DOM元素，用于渲染
+ * @param {Array} origin 接口的路由信息
+ * @param {Array} local 本地的路由信息
+ * @returns {Array} 用于渲染的路由树
+ */
+export const author_router_add = (origin: MenuInformation[], local: MenuInformation[]) => {
+  return origin
+    ?.map((originItem) => {
+      const matchingItem = local?.find((localItem) => localItem?.menuid === originItem?.menuid);
+      if (matchingItem) {
+        originItem?.resourcelist?.forEach((i) => {
+          matchingItem?.resourcelist?.forEach((j) => {
+            if (i.resourceId === j.resourceId && !j.more) {
+              Object.assign(i, j);
+            }
+          });
+        });
+        // 处理后端 resourceId 返回相同情况
+        const a = matchingItem?.resourcelist?.filter((i) => i.more);
+        const b = a?.filter((i) => originItem?.resourcelist?.some((j) => i.resourceId === j.resourceId));
+        const c = b ? originItem?.resourcelist?.concat(b) : originItem?.resourcelist;
+        const newItem = { ...originItem, ...matchingItem, resourcelist: c };
+        if (originItem.children && originItem.children.length > 0) {
+          newItem.children = author_router_add(originItem?.children, matchingItem?.children || []);
+        }
+        return newItem;
+      }
+
       return null;
     })
     ?.filter(Boolean);

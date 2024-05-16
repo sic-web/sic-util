@@ -15,6 +15,7 @@ var window = require('./modules/window.js');
 
 
 exports.author_passwordCheck = author.author_passwordCheck;
+exports.author_router_add = author.author_router_add;
 exports.author_router_filter = author.author_router_filter;
 exports.author_strict = author.author_strict;
 exports.author_traceId = author.author_traceId;

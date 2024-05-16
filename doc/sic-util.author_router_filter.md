@@ -4,7 +4,7 @@
 
 ## author\_router\_filter() function
 
-处理接口的路由数据，将本地的路由信息补充进去
+处理接口的路由数据，将本地的路由信息补充进去 数据层面：既处理数据问题，也解决浏览器关于menuId，resourceList等字段驼峰大小写的警告 业务层面：处理的的数据存储到localstore中，便于系统使用
 
 **Signature:**
 
