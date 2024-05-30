@@ -1,4 +1,20 @@
 import Num from "number-precision"; // 保证精度不丢失
+
+/**
+ * 单位扩大固定倍数
+ * @param {*} amount 当前金额
+ * @param {*} unit 转换单位，默认100
+ * @param {*} accuracy 保留几位小数，默认2位
+ */
+export const num_expand = (amount: number | string, unit = 100, accuracy = 2) => {
+  if (amount || amount === 0) {
+    const realAmount = Num.divide(amount, unit).toFixed(accuracy);
+    return realAmount;
+  } else {
+    return amount;
+  }
+};
+
 /**
  * 单位扩大两位，一般用于（分->元）（百分数->数）
  * @param {*} amount 当前金额

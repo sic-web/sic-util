@@ -1,7 +1,18 @@
 import { describe, expect, it } from "vitest";
-import { num_expand_100, num_reduce_100, num_text } from "../src/modules/number";
+import { num_expand, num_expand_100, num_reduce_100, num_text } from "../src/modules/number";
 
 describe("number", () => {
+  it("num_expand", () => {
+    const source1 = "1.00";
+    const source2 = "0.10";
+    const source3 = "1";
+    const res1 = num_expand(100);
+    const res2 = num_expand(100, 1000);
+    const res3 = num_expand(100, 100, 0);
+    expect(res1).toEqual(source1);
+    expect(res2).toEqual(source2);
+    expect(res3).toEqual(source3);
+  });
   it("num_expand_100", () => {
     const source1 = "1.00";
     const source2 = "1";
