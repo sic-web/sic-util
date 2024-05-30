@@ -1,6 +1,21 @@
 import Num from 'number-precision';
 
 /**
+ * 单位扩大固定倍数
+ * @param {*} amount 当前金额
+ * @param {*} unit 转换单位，默认100
+ * @param {*} accuracy 保留几位小数，默认2位
+ */
+const num_expand = (amount, unit = 100, accuracy = 2) => {
+    if (amount || amount === 0) {
+        const realAmount = Num.divide(amount, unit).toFixed(accuracy);
+        return realAmount;
+    }
+    else {
+        return amount;
+    }
+};
+/**
  * 单位扩大两位，一般用于（分->元）（百分数->数）
  * @param {*} amount 当前金额
  * @param {*} accuracy 保留几位小数，默认2位
@@ -101,4 +116,4 @@ const num_text = (number, type = "upper") => {
     return `${_integer ? _integer : "零"}元` + (_decimal || "整");
 };
 
-export { num_expand_100, num_reduce_100, num_text };
+export { num_expand, num_expand_100, num_reduce_100, num_text };

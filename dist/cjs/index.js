@@ -28,6 +28,7 @@ exports.demo = demo.demo;
 exports.file_calculate_md5 = file.file_calculate_md5;
 exports.file_load = file.file_load;
 exports.file_open = file.file_open;
+exports.num_expand = number.num_expand;
 exports.num_expand_100 = number.num_expand_100;
 exports.num_reduce_100 = number.num_reduce_100;
 exports.num_text = number.num_text;

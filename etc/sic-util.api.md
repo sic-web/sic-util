@@ -76,6 +76,9 @@ export const get_multiple_color: (value: string | null, opacity: number) => stri
 export const hex_to_rgb: (hex: string) => RgbColor;
 
 // @public
+export const num_expand: (amount: number | string, unit?: number, accuracy?: number) => string | number;
+
+// @public
 export const num_expand_100: (amount: number | string, accuracy?: number) => string | number;
 
 // @public

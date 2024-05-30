@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.43.1",
+    "toolVersion": "7.46.2",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -831,6 +831,79 @@
             }
           ],
           "name": "num_expand_100"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!num_expand:function(1)",
+          "docComment": "/**\n * 单位扩大固定倍数\n *\n * @param amount - 当前金额\n *\n * @param unit - 转换单位，默认100\n *\n * @param accuracy - 保留几位小数，默认2位\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "num_expand: (amount: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string"
+            },
+            {
+              "kind": "Content",
+              "text": ", unit?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", accuracy?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "string | number"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/number.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "amount",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "unit",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            },
+            {
+              "parameterName": "accuracy",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "num_expand"
         },
         {
           "kind": "Function",

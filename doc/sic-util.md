@@ -162,6 +162,17 @@ Description
 </td></tr>
 <tr><td>
 
+[num\_expand(amount, unit, accuracy)](./sic-util.num_expand.md)
+
+
+</td><td>
+
+单位扩大固定倍数
+
+
+</td></tr>
+<tr><td>
+
 [num\_reduce\_100(amount)](./sic-util.num_reduce_100.md)
 
 
