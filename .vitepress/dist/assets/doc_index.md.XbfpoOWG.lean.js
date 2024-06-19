@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a3 as r}from"./chunks/framework.D42TvibZ.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"doc/index.md","filePath":"doc/index.md"}'),c={name:"doc/index.md"},o=r("",4),d=[o];function i(n,s,_,h,p,l){return t(),a("div",null,d)}const u=e(c,[["render",i]]);export{m as __pageData,u as default};
