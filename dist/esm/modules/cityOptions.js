@@ -36,5 +36,34 @@ const city_options = () => {
     }));
     return cityOptions;
 };
+/**
+ * 编码转城市
+ */
+const city_code_text = (provinceId, cityId, districtId) => {
+    let cityName = "";
+    if (provinceId) {
+        if (provinceId === "000000") {
+            cityName = "全国";
+        }
+        else {
+            city_options()?.forEach((i) => {
+                if (i.value === provinceId) {
+                    cityName = cityName + i.label;
+                    i.children?.forEach((j) => {
+                        if (j.value === `${provinceId}${cityId}`) {
+                            cityName = cityName + j.label;
+                            j.children.forEach((k) => {
+                                if (k.value === `${provinceId}${cityId}${districtId}`) {
+                                    cityName = cityName + k.label;
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    }
+    return cityName;
+};
 
-export { city_options };
+export { city_code_text, city_options };

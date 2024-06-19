@@ -47,6 +47,9 @@ export const author_strict: (list: ResourceItem[], id: number) => boolean;
 export const author_traceId: (origin: string, url: string) => string;
 
 // @public
+export const city_code_text: (provinceId: string, cityId?: string, districtId?: string) => string;
+
+// @public
 export const city_options: () => {
     label: any;
     value: any;
@@ -74,6 +77,9 @@ export const get_multiple_color: (value: string | null, opacity: number) => stri
 //
 // @public
 export const hex_to_rgb: (hex: string) => RgbColor;
+
+// @public
+export const num_expand: (amount: number | string, unit?: number, accuracy?: number) => string | number;
 
 // @public
 export const num_expand_100: (amount: number | string, accuracy?: number) => string | number;

@@ -1,9 +1,9 @@
 export { author_passwordCheck, author_router_add, author_router_filter, author_strict, author_traceId } from './modules/author.js';
-export { city_options } from './modules/cityOptions.js';
+export { city_code_text, city_options } from './modules/cityOptions.js';
 export { get_multiple_color, hex_to_rgb, reduce_opacity, rgb_to_hex } from './modules/color.js';
 export { demo } from './modules/demo.js';
 export { file_calculate_md5, file_load, file_open } from './modules/file.js';
-export { num_expand_100, num_reduce_100, num_text } from './modules/number.js';
+export { num_expand, num_expand_100, num_reduce_100, num_text } from './modules/number.js';
 export { sys_detectBrowser, sys_print } from './modules/system.js';
 export { tem_compare_version, tem_get_tableHeader } from './modules/temporary.js';
 export { timejs } from './modules/timejs.js';

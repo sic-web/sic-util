@@ -74,6 +74,17 @@ Description
 </td></tr>
 <tr><td>
 
+[city\_code\_text(provinceId, cityId, districtId)](./sic-util.city_code_text.md)
+
+
+</td><td>
+
+编码转城市
+
+
+</td></tr>
+<tr><td>
+
 [city\_options()](./sic-util.city_options.md)
 
 
@@ -157,6 +168,17 @@ Description
 </td><td>
 
 单位扩大两位，一般用于（分-<!-- -->&gt;<!-- -->元）（百分数-<!-- -->&gt;<!-- -->数）
+
+
+</td></tr>
+<tr><td>
+
+[num\_expand(amount, unit, accuracy)](./sic-util.num_expand.md)
+
+
+</td><td>
+
+单位扩大固定倍数
 
 
 </td></tr>

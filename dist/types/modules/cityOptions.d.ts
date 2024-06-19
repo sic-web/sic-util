@@ -7,5 +7,9 @@ declare const city_options: () => {
     value: any;
     children: any;
 }[];
+/**
+ * 编码转城市
+ */
+declare const city_code_text: (provinceId: string, cityId?: string, districtId?: string) => string;
 
-export { city_options };
+export { city_code_text, city_options };
