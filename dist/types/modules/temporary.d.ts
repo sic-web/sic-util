@@ -8,5 +8,22 @@ declare const tem_compare_version: (version1: string, version2: string) => boole
  * @param {TableHeaderItem} initial 默认
  */
 declare const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], initial: TableHeaderItem[]) => TableHeaderItem[];
+/**
+ * 获取枚举配置
+ * @param {*} value 当前value值
+ * @param {*} array  当前枚举配置
+ */
+declare const getOptionConfig: (value: number, array: {
+    value: number;
+    label: string;
+    type?: number;
+}[]) => {
+    value: number;
+    label: string;
+    type?: number | undefined;
+} | {
+    label: null;
+    type: null;
+};
 
-export { tem_compare_version, tem_get_tableHeader };
+export { getOptionConfig, tem_compare_version, tem_get_tableHeader };

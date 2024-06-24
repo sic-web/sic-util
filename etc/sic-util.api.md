@@ -73,6 +73,20 @@ export const file_open: (props: IProps) => void;
 // @public
 export const get_multiple_color: (value: string | null, opacity: number) => string;
 
+// @public
+export const getOptionConfig: (value: number, array: {
+    value: number;
+    label: string;
+    type?: number;
+}[]) => {
+    value: number;
+    label: string;
+    type?: number | undefined;
+} | {
+    label: null;
+    type: null;
+};
+
 // Warning: (ae-forgotten-export) The symbol "RgbColor" needs to be exported by the entry point index.d.ts
 //
 // @public

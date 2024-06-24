@@ -151,6 +151,17 @@ Description
 </td></tr>
 <tr><td>
 
+[getOptionConfig(value, array)](./sic-util.getoptionconfig.md)
+
+
+</td><td>
+
+获取枚举配置
+
+
+</td></tr>
+<tr><td>
+
 [hex\_to\_rgb(hex)](./sic-util.hex_to_rgb.md)
 
 

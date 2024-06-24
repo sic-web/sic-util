@@ -81,3 +81,23 @@ describe("temporary", () => {
     expect(res).toEqual(source);
   });
 });
+
+import { getOptionConfig } from "../src/modules/temporary";
+const PROJECTSTATUS = [
+  { value: 1, label: "待支付", type: 4 },
+  { value: 2, label: "审核中", type: 3 },
+  { value: 3, label: "发放中", type: 2 },
+  { value: 4, label: "已发放", type: 1 },
+  { value: 5, label: "已取消", type: 5 },
+  { value: 6, label: "驳回", type: 6 },
+];
+describe("getOptionConfig", () => {
+  it("getOptionConfig", () => {
+    const source = "已发放";
+    const res = getOptionConfig(4, PROJECTSTATUS)?.label;
+    const source1 = 5;
+    const res1 = getOptionConfig(5, PROJECTSTATUS)?.type;
+    expect(res).toEqual(source);
+    expect(res1).toEqual(source1);
+  });
+});

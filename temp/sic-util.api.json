@@ -808,6 +808,63 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!getOptionConfig:function(1)",
+          "docComment": "/**\n * 获取枚举配置\n *\n * @param value - 当前value值\n *\n * @param array - 当前枚举配置\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getOptionConfig: (value: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", array: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    value: number;\n    label: string;\n    type?: number;\n}[]"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    value: number;\n    label: string;\n    type?: number | undefined;\n} | {\n    label: null;\n    type: null;\n}"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/temporary.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "array",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "getOptionConfig"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!hex_to_rgb:function(1)",
           "docComment": "/**\n * 函数“hex_to_rgb”将十六进制颜色代码转换为 RGB 颜色数组。\n *\n * @param hex - 十六进制颜色代码，例如“#FFA500”\n *\n * @returns 包含从输入提供的十六进制颜色代码转换而来的 RGB 值的数组。\n */\n",
           "excerptTokens": [

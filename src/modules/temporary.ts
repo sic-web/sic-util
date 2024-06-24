@@ -64,3 +64,13 @@ export const tem_get_tableHeader = (keyVal: KeyVal, cache: TableHeaderItem[], in
   });
   return returnList;
 };
+
+/**
+ * 获取枚举配置
+ * @param {*} value 当前value值
+ * @param {*} array  当前枚举配置
+ */
+export const getOptionConfig = (value: number, array: { value: number; label: string; type?: number }[]) => {
+  const findItem = array?.find((item) => item.value === value);
+  return findItem ? findItem : { label: null, type: null };
+};

@@ -61,5 +61,14 @@ const tem_get_tableHeader = (keyVal, cache, initial) => {
     });
     return returnList;
 };
+/**
+ * 获取枚举配置
+ * @param {*} value 当前value值
+ * @param {*} array  当前枚举配置
+ */
+const getOptionConfig = (value, array) => {
+    const findItem = array?.find((item) => item.value === value);
+    return findItem ? findItem : { label: null, type: null };
+};
 
-export { tem_compare_version, tem_get_tableHeader };
+export { getOptionConfig, tem_compare_version, tem_get_tableHeader };
