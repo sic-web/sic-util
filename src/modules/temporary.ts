@@ -70,7 +70,7 @@ export const tem_get_tableHeader = (keyVal: KeyVal, cache: TableHeaderItem[], in
  * @param {*} value 当前value值
  * @param {*} array  当前枚举配置
  */
-export const getOptionConfig = (value: number, array: { value: number; label: string; type?: number }[]) => {
+export const getOptionConfig = (value: number, array: { value: number | null; label: string; type?: number | null }[]) => {
   const findItem = array?.find((item) => item.value === value);
-  return findItem ? findItem : { label: null, type: null };
+  return findItem ? findItem : { value: null, label: "", type: null };
 };

@@ -10,16 +10,13 @@
 
 ```typescript
 getOptionConfig: (value: number, array: {
-    value: number;
+    value: number | null;
     label: string;
-    type?: number;
+    type?: number | null;
 }[]) => {
-    value: number;
+    value: number | null;
     label: string;
-    type?: number | undefined;
-} | {
-    label: null;
-    type: null;
+    type?: number | null | undefined;
 }
 ```
 
@@ -64,7 +61,7 @@ array
 
 </td><td>
 
-{ value: number; label: string; type?: number; }\[\]
+{ value: number \| null; label: string; type?: number \| null; }\[\]
 
 
 </td><td>
@@ -76,5 +73,5 @@ array
 </tbody></table>
 **Returns:**
 
-{ value: number; label: string; type?: number \| undefined; } \| { label: null; type: null; }
+{ value: number \| null; label: string; type?: number \| null \| undefined; }
 

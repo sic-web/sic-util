@@ -14,16 +14,13 @@ declare const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], in
  * @param {*} array  当前枚举配置
  */
 declare const getOptionConfig: (value: number, array: {
-    value: number;
+    value: number | null;
     label: string;
-    type?: number;
+    type?: number | null;
 }[]) => {
-    value: number;
+    value: number | null;
     label: string;
-    type?: number | undefined;
-} | {
-    label: null;
-    type: null;
+    type?: number | null | undefined;
 };
 
 export { getOptionConfig, tem_compare_version, tem_get_tableHeader };

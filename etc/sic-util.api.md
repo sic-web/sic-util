@@ -75,16 +75,13 @@ export const get_multiple_color: (value: string | null, opacity: number) => stri
 
 // @public
 export const getOptionConfig: (value: number, array: {
-    value: number;
+    value: number | null;
     label: string;
-    type?: number;
+    type?: number | null;
 }[]) => {
-    value: number;
+    value: number | null;
     label: string;
-    type?: number | undefined;
-} | {
-    label: null;
-    type: null;
+    type?: number | null | undefined;
 };
 
 // Warning: (ae-forgotten-export) The symbol "RgbColor" needs to be exported by the entry point index.d.ts

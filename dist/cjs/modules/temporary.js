@@ -70,7 +70,7 @@ const tem_get_tableHeader = (keyVal, cache, initial) => {
  */
 const getOptionConfig = (value, array) => {
     const findItem = array?.find((item) => item.value === value);
-    return findItem ? findItem : { label: null, type: null };
+    return findItem ? findItem : { value: null, label: "", type: null };
 };
 
 exports.getOptionConfig = getOptionConfig;
