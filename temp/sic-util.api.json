@@ -825,7 +825,7 @@
             },
             {
               "kind": "Content",
-              "text": "{\n    value: number | null;\n    label: string;\n    type?: number | null;\n}[]"
+              "text": "any[]"
             },
             {
               "kind": "Content",
@@ -833,7 +833,7 @@
             },
             {
               "kind": "Content",
-              "text": "{\n    value: number | null;\n    label: string;\n    type?: number | null | undefined;\n}"
+              "text": "any"
             }
           ],
           "fileUrlPath": "dist/types/modules/temporary.d.ts",

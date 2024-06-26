@@ -68,7 +68,7 @@ const tem_get_tableHeader = (keyVal, cache, initial) => {
  */
 const getOptionConfig = (value, array) => {
     const findItem = array?.find((item) => item.value === value);
-    return findItem ? findItem : { value: null, label: "", type: null };
+    return findItem ? findItem : {};
 };
 
 export { getOptionConfig, tem_compare_version, tem_get_tableHeader };
