@@ -5,7 +5,7 @@ export { demo } from './modules/demo.js';
 export { file_calculate_md5, file_load, file_open } from './modules/file.js';
 export { num_expand, num_expand_100, num_reduce_100, num_text } from './modules/number.js';
 export { sys_detectBrowser, sys_print } from './modules/system.js';
-export { getOptionConfig, tem_compare_version, tem_get_tableHeader } from './modules/temporary.js';
+export { getOptionConfig, getUrlConfig, tem_compare_version, tem_get_tableHeader } from './modules/temporary.js';
 export { timejs } from './modules/timejs.js';
 export { val_edgeSpace, val_email, val_empty, val_idCard, val_num, val_phone, val_space } from './modules/validation.js';
 export { win_dynamic_fontSize } from './modules/window.js';

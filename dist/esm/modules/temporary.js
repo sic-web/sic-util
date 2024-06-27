@@ -70,5 +70,26 @@ const getOptionConfig = (value, array) => {
     const findItem = array?.find((item) => item.value === value);
     return findItem ? findItem : {};
 };
+/**
+ * 获取url 文件名 除后缀名以外的地址名  后缀名
+ * @param {*} url 地址
+ */
+const getUrlConfig = (url) => {
+    const urlObj = new URL(url);
+    const path = urlObj.pathname;
+    const fileName = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
+    const suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
+    const prefixPath = url.substring(0, url.lastIndexOf("."));
+    if (fileName && suffix && prefixPath) {
+        return {
+            fileName: fileName,
+            prefix: prefixPath,
+            suffix: suffix,
+        };
+    }
+    else {
+        return null;
+    }
+};
 
-export { getOptionConfig, tem_compare_version, tem_get_tableHeader };
+export { getOptionConfig, getUrlConfig, tem_compare_version, tem_get_tableHeader };

@@ -36,6 +36,7 @@ exports.num_text = number.num_text;
 exports.sys_detectBrowser = system.sys_detectBrowser;
 exports.sys_print = system.sys_print;
 exports.getOptionConfig = temporary.getOptionConfig;
+exports.getUrlConfig = temporary.getUrlConfig;
 exports.tem_compare_version = temporary.tem_compare_version;
 exports.tem_get_tableHeader = temporary.tem_get_tableHeader;
 exports.timejs = timejs.timejs;

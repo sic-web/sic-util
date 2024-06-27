@@ -76,6 +76,13 @@ export const get_multiple_color: (value: string | null, opacity: number) => stri
 // @public
 export const getOptionConfig: (value: number, array: any[]) => any;
 
+// @public
+export const getUrlConfig: (url: string) => {
+    fileName: string;
+    prefix: string;
+    suffix: string;
+} | null;
+
 // Warning: (ae-forgotten-export) The symbol "RgbColor" needs to be exported by the entry point index.d.ts
 //
 // @public

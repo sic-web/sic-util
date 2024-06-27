@@ -865,6 +865,47 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!getUrlConfig:function(1)",
+          "docComment": "/**\n * 获取url 文件名 除后缀名以外的地址名 后缀名\n *\n * @param url - 地址\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUrlConfig: (url: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    fileName: string;\n    prefix: string;\n    suffix: string;\n} | null"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/temporary.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "url",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "getUrlConfig"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!hex_to_rgb:function(1)",
           "docComment": "/**\n * 函数“hex_to_rgb”将十六进制颜色代码转换为 RGB 颜色数组。\n *\n * @param hex - 十六进制颜色代码，例如“#FFA500”\n *\n * @returns 包含从输入提供的十六进制颜色代码转换而来的 RGB 值的数组。\n */\n",
           "excerptTokens": [

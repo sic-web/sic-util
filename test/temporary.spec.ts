@@ -101,3 +101,19 @@ describe("getOptionConfig", () => {
     expect(res1).toEqual(source1);
   });
 });
+
+import { getUrlConfig } from "../src/modules/temporary";
+const url = "https://testfile.siciei.com/business_license/f22279c5f52a823468987aeb90469d0b/测试文件名.JPG";
+describe("getUrlConfig", () => {
+  it("getUrlConfig", () => {
+    const source = "测试文件名.JPG";
+    const res = getUrlConfig(url)?.fileName;
+    const source1 = "https://testfile.siciei.com/business_license/f22279c5f52a823468987aeb90469d0b/测试文件名";
+    const res1 = getUrlConfig(url)?.prefix;
+    const source2 = "JPG";
+    const res2 = getUrlConfig(url)?.suffix;
+    expect(res).toEqual(source);
+    expect(res1).toEqual(source1);
+    expect(res2).toEqual(source2);
+  });
+});
