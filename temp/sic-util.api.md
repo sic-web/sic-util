@@ -77,7 +77,7 @@ export const get_multiple_color: (value: string | null, opacity: number) => stri
 export const getOptionConfig: (value: number, array: any[]) => any;
 
 // @public
-export const getUrlConfig: (url: string) => {
+export const getUrlConfig: (url: string | null) => {
     fileName: string;
     prefix: string;
     suffix: string;

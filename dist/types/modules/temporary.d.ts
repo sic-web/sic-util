@@ -18,7 +18,7 @@ declare const getOptionConfig: (value: number, array: any[]) => any;
  * 获取url 文件名 除后缀名以外的地址名  后缀名
  * @param {*} url 地址
  */
-declare const getUrlConfig: (url: string) => {
+declare const getUrlConfig: (url: string | null) => {
     fileName: string;
     prefix: string;
     suffix: string;

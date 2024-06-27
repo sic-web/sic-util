@@ -77,16 +77,16 @@ const getOptionConfig = (value, array) => {
  * @param {*} url 地址
  */
 const getUrlConfig = (url) => {
-    const urlObj = new URL(url);
-    const path = urlObj.pathname;
-    const fileName = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
-    const suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
-    const prefixPath = url.substring(0, url.lastIndexOf("."));
-    if (fileName && suffix && prefixPath) {
+    if (!!url) {
+        const urlObj = new URL(url);
+        const path = urlObj.pathname;
+        const fileName = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
+        const suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
+        const prefixPath = url.substring(0, url.lastIndexOf("."));
         return {
-            fileName: fileName,
-            prefix: prefixPath,
-            suffix: suffix,
+            fileName: fileName ?? "",
+            prefix: prefixPath ?? "",
+            suffix: suffix ?? "",
         };
     }
     else {

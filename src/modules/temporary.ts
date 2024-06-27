@@ -79,17 +79,17 @@ export const getOptionConfig = (value: number, array: any[]) => {
  * 获取url 文件名 除后缀名以外的地址名  后缀名
  * @param {*} url 地址
  */
-export const getUrlConfig = (url: string) => {
-  const urlObj = new URL(url);
-  const path = urlObj.pathname;
-  const fileName = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
-  const suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
-  const prefixPath = url.substring(0, url.lastIndexOf("."));
-  if (fileName && suffix && prefixPath) {
+export const getUrlConfig = (url: string | null) => {
+  if (!!url) {
+    const urlObj = new URL(url);
+    const path = urlObj.pathname;
+    const fileName = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
+    const suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
+    const prefixPath = url.substring(0, url.lastIndexOf("."));
     return {
-      fileName: fileName,
-      prefix: prefixPath,
-      suffix: suffix,
+      fileName: fileName ?? "",
+      prefix: prefixPath ?? "",
+      suffix: suffix ?? "",
     };
   } else {
     return null;

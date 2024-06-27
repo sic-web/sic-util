@@ -874,7 +874,7 @@
             },
             {
               "kind": "Content",
-              "text": "string"
+              "text": "string | null"
             },
             {
               "kind": "Content",

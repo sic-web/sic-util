@@ -9,7 +9,7 @@
 **Signature:**
 
 ```typescript
-getUrlConfig: (url: string) => {
+getUrlConfig: (url: string | null) => {
     fileName: string;
     prefix: string;
     suffix: string;
@@ -41,7 +41,7 @@ url
 
 </td><td>
 
-string
+string \| null
 
 
 </td><td>
