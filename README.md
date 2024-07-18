@@ -1,4 +1,4 @@
-# sic-ui
+# sic-util
 
 [![NPM version](https://img.shields.io/npm/v/sic-ui.svg?style=flat)](https://npmjs.org/package/sic-ui)
 [![NPM downloads](http://img.shields.io/npm/dm/sic-ui.svg?style=flat)](https://npmjs.org/package/sic-ui)

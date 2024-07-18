@@ -79,18 +79,29 @@ Description
 
 </td><td>
 
-编码转城市
+编码转城市，默认三级
 
 
 </td></tr>
 <tr><td>
 
-[city\_options()](./sic-util.city_options.md)
+[city\_options(level)](./sic-util.city_options.md)
 
 
 </td><td>
 
 城市选择器 <Cascader/> 组件内使用 options=<!-- -->{<!-- -->cityOptions<!-- -->} 引入省市区
+
+
+</td></tr>
+<tr><td>
+
+[city\_two\_code\_text(provinceId, cityId)](./sic-util.city_two_code_text.md)
+
+
+</td><td>
+
+编码转城市
 
 
 </td></tr>

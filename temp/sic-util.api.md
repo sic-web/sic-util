@@ -50,11 +50,21 @@ export const author_traceId: (origin: string, url: string) => string;
 export const city_code_text: (provinceId: string, cityId?: string, districtId?: string) => string;
 
 // @public
-export const city_options: () => {
-    label: any;
-    value: any;
-    children: any;
-}[];
+export const city_options: (level?: string) => ({
+    label: string;
+    value: string;
+    children?: undefined;
+} | {
+    label: string;
+    value: string;
+    children: {
+        label: string;
+        value: string;
+    }[];
+})[];
+
+// @public
+export const city_two_code_text: (provinceId: string, cityId?: string) => string;
 
 // @public
 export const demo: () => boolean;

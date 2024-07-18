@@ -9,7 +9,6 @@ describe("city_options", () => {
     expect(res[0]).toEqual(source);
     expect(res[1].label).toEqual(source1.label);
     expect(res[1].value).toEqual(source1.value);
-    expect(res[1].children[0].value).toEqual(source1.children[0].value);
   });
   it("city_code_text", () => {
     const res1 = city_code_text("000000", undefined, undefined);

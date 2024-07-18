@@ -21,6 +21,7 @@ exports.author_strict = author.author_strict;
 exports.author_traceId = author.author_traceId;
 exports.city_code_text = cityOptions.city_code_text;
 exports.city_options = cityOptions.city_options;
+exports.city_two_code_text = cityOptions.city_two_code_text;
 exports.get_multiple_color = color.get_multiple_color;
 exports.hex_to_rgb = color.hex_to_rgb;
 exports.reduce_opacity = color.reduce_opacity;

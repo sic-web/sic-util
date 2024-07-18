@@ -9,13 +9,56 @@
 **Signature:**
 
 ```typescript
-city_options: () => {
-    label: any;
-    value: any;
-    children: any;
-}[]
+city_options: (level?: string) => ({
+    label: string;
+    value: string;
+    children?: undefined;
+} | {
+    label: string;
+    value: string;
+    children: {
+        label: string;
+        value: string;
+    }[];
+})[]
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+level
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
-{ label: any; value: any; children: any; }\[\]
+({ label: string; value: string; children?: undefined; } \| { label: string; value: string; children: { label: string; value: string; }\[\]; })\[\]
 
