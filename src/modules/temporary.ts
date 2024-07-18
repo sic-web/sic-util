@@ -70,7 +70,28 @@ export const tem_get_tableHeader = (keyVal: KeyVal, cache: TableHeaderItem[], in
  * @param {*} value 当前value值
  * @param {*} array  当前枚举配置
  */
-export const getOptionConfig = (value: number, array: { value: number; label: string; type?: number }[]) => {
+export const getOptionConfig = (value: number, array: any[]) => {
   const findItem = array?.find((item) => item.value === value);
-  return findItem ? findItem : { label: null, type: null };
+  return findItem ? findItem : {};
+};
+
+/**
+ * 获取url 文件名 除后缀名以外的地址名  后缀名
+ * @param {*} url 地址
+ */
+export const getUrlConfig = (url: string | null) => {
+  if (!!url) {
+    const urlObj = new URL(url);
+    const path = urlObj.pathname;
+    const fileName = decodeURIComponent(path.substring(path.lastIndexOf("/") + 1));
+    const suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
+    const prefixPath = url.substring(0, url.lastIndexOf("."));
+    return {
+      fileName: fileName ?? "",
+      prefix: prefixPath ?? "",
+      suffix: suffix ?? "",
+    };
+  } else {
+    return null;
+  }
 };

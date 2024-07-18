@@ -13,17 +13,15 @@ declare const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], in
  * @param {*} value 当前value值
  * @param {*} array  当前枚举配置
  */
-declare const getOptionConfig: (value: number, array: {
-    value: number;
-    label: string;
-    type?: number;
-}[]) => {
-    value: number;
-    label: string;
-    type?: number | undefined;
-} | {
-    label: null;
-    type: null;
-};
+declare const getOptionConfig: (value: number, array: any[]) => any;
+/**
+ * 获取url 文件名 除后缀名以外的地址名  后缀名
+ * @param {*} url 地址
+ */
+declare const getUrlConfig: (url: string | null) => {
+    fileName: string;
+    prefix: string;
+    suffix: string;
+} | null;
 
-export { getOptionConfig, tem_compare_version, tem_get_tableHeader };
+export { getOptionConfig, getUrlConfig, tem_compare_version, tem_get_tableHeader };

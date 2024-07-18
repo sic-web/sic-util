@@ -9,18 +9,7 @@
 **Signature:**
 
 ```typescript
-getOptionConfig: (value: number, array: {
-    value: number;
-    label: string;
-    type?: number;
-}[]) => {
-    value: number;
-    label: string;
-    type?: number | undefined;
-} | {
-    label: null;
-    type: null;
-}
+getOptionConfig: (value: number, array: any[]) => any
 ```
 
 ## Parameters
@@ -64,7 +53,7 @@ array
 
 </td><td>
 
-{ value: number; label: string; type?: number; }\[\]
+any\[\]
 
 
 </td><td>
@@ -76,5 +65,5 @@ array
 </tbody></table>
 **Returns:**
 
-{ value: number; label: string; type?: number \| undefined; } \| { label: null; type: null; }
+any
 

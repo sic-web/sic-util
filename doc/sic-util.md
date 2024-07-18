@@ -173,6 +173,17 @@ Description
 </td></tr>
 <tr><td>
 
+[getUrlConfig(url)](./sic-util.geturlconfig.md)
+
+
+</td><td>
+
+获取url 文件名 除后缀名以外的地址名 后缀名
+
+
+</td></tr>
+<tr><td>
+
 [hex\_to\_rgb(hex)](./sic-util.hex_to_rgb.md)
 
 

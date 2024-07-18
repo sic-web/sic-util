@@ -899,7 +899,7 @@
             },
             {
               "kind": "Content",
-              "text": "{\n    value: number;\n    label: string;\n    type?: number;\n}[]"
+              "text": "any[]"
             },
             {
               "kind": "Content",
@@ -907,7 +907,7 @@
             },
             {
               "kind": "Content",
-              "text": "{\n    value: number;\n    label: string;\n    type?: number | undefined;\n} | {\n    label: null;\n    type: null;\n}"
+              "text": "any"
             }
           ],
           "fileUrlPath": "dist/types/modules/temporary.d.ts",
@@ -936,6 +936,47 @@
             }
           ],
           "name": "getOptionConfig"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!getUrlConfig:function(1)",
+          "docComment": "/**\n * 获取url 文件名 除后缀名以外的地址名 后缀名\n *\n * @param url - 地址\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUrlConfig: (url: "
+            },
+            {
+              "kind": "Content",
+              "text": "string | null"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    fileName: string;\n    prefix: string;\n    suffix: string;\n} | null"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/temporary.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "url",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "getUrlConfig"
         },
         {
           "kind": "Function",
