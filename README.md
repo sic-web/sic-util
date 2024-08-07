@@ -8,7 +8,7 @@ A react library developed with dumi
 git add .
 git commit -m "feat: 更新" --no-verify
 
-https://shlc_public.gitlab.io/sic-util/
+https://sicweb.gitlab.io/sic-util/
 
 ## Usage
 
