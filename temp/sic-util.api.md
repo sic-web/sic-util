@@ -14,16 +14,16 @@ export const author_passwordCheck: (str: string) => number;
 // @public
 export const author_router_add: (origin: MenuInformation[], local: MenuInformation[]) => ({
     resourcelist: ResourceList[] | undefined;
-    menuid?: number;
-    menuId?: number;
-    parentid?: number;
-    parentId?: number;
-    parentname?: string;
-    parentName?: string;
-    resourceList?: ResourceList[];
-    sort?: number;
-    label?: string;
-    key?: string;
+    menuid?: number | undefined;
+    menuId?: number | undefined;
+    parentid?: number | undefined;
+    parentId?: number | undefined;
+    parentname?: string | undefined;
+    parentName?: string | undefined;
+    resourceList?: ResourceList[] | undefined;
+    sort?: number | undefined;
+    label?: string | undefined;
+    key?: string | undefined;
     icon?: any;
     element?: any;
     children?: any;
@@ -37,6 +37,9 @@ export const author_router_filter: (origin: MenuInformation[], local: MenuInform
     resourcelist: ResourceList[] | undefined;
     children: any;
 } | null)[];
+
+// @public
+export const author_rsa: (pubKey: string, password: string) => string;
 
 // Warning: (ae-forgotten-export) The symbol "ResourceItem" needs to be exported by the entry point index.d.ts
 //

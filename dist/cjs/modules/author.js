@@ -1,6 +1,7 @@
 'use strict';
 
 var uuid = require('uuid');
+var JSEncrypt = require('jsencrypt');
 
 /**
  * 生成TraceId
@@ -128,9 +129,39 @@ const author_router_add = (origin, local) => {
     })
         ?.filter(Boolean);
 };
+// Base64 转二进制
+const base64ToBinary = (base64) => {
+    const binaryString = atob(base64);
+    const bytes = new Uint8Array(binaryString.length);
+    for (let i = 0; i < binaryString.length; i++) {
+        bytes[i] = binaryString.charCodeAt(i);
+    }
+    return bytes;
+};
+// 二进制转 16 进制
+const binaryToHex = (binary) => {
+    const hexArray = Array.from(binary).map((byte) => byte.toString(16).padStart(2, "0"));
+    return hexArray.join("");
+};
+/**
+ * RSA数据加密处理，用于密码加密传输
+ * @param {String} pubKey 公钥
+ * @param {String} password 密码
+ * @returns {String} 加密后的数据，吐出为十六进制
+ */
+const author_rsa = (pubKey, password) => {
+    const jsEncrypt = new JSEncrypt();
+    jsEncrypt.setPublicKey(pubKey);
+    const result = jsEncrypt.encrypt(password);
+    // 进行转换
+    const binaryData = base64ToBinary(result);
+    const encryptedHex = binaryToHex(binaryData);
+    return encryptedHex;
+};
 
 exports.author_passwordCheck = author_passwordCheck;
 exports.author_router_add = author_router_add;
 exports.author_router_filter = author_router_filter;
+exports.author_rsa = author_rsa;
 exports.author_strict = author_strict;
 exports.author_traceId = author_traceId;

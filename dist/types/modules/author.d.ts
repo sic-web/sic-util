@@ -70,19 +70,26 @@ declare const author_router_filter: (origin: MenuInformation[], local: MenuInfor
  */
 declare const author_router_add: (origin: MenuInformation[], local: MenuInformation[]) => ({
     resourcelist: ResourceList[] | undefined;
-    menuid?: number;
-    menuId?: number;
-    parentid?: number;
-    parentId?: number;
-    parentname?: string;
-    parentName?: string;
-    resourceList?: ResourceList[];
-    sort?: number;
-    label?: string;
-    key?: string;
+    menuid?: number | undefined;
+    menuId?: number | undefined;
+    parentid?: number | undefined;
+    parentId?: number | undefined;
+    parentname?: string | undefined;
+    parentName?: string | undefined;
+    resourceList?: ResourceList[] | undefined;
+    sort?: number | undefined;
+    label?: string | undefined;
+    key?: string | undefined;
     icon?: any;
     element?: any;
     children?: any;
 } | null)[];
+/**
+ * RSA数据加密处理，用于密码加密传输
+ * @param {String} pubKey 公钥
+ * @param {String} password 密码
+ * @returns {String} 加密后的数据，吐出为十六进制
+ */
+declare const author_rsa: (pubKey: string, password: string) => string;
 
-export { author_passwordCheck, author_router_add, author_router_filter, author_strict, author_traceId };
+export { author_passwordCheck, author_router_add, author_router_filter, author_rsa, author_strict, author_traceId };

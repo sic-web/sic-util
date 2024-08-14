@@ -11,16 +11,16 @@
 ```typescript
 author_router_add: (origin: MenuInformation[], local: MenuInformation[]) => ({
     resourcelist: ResourceList[] | undefined;
-    menuid?: number;
-    menuId?: number;
-    parentid?: number;
-    parentId?: number;
-    parentname?: string;
-    parentName?: string;
-    resourceList?: ResourceList[];
-    sort?: number;
-    label?: string;
-    key?: string;
+    menuid?: number | undefined;
+    menuId?: number | undefined;
+    parentid?: number | undefined;
+    parentId?: number | undefined;
+    parentname?: string | undefined;
+    parentName?: string | undefined;
+    resourceList?: ResourceList[] | undefined;
+    sort?: number | undefined;
+    label?: string | undefined;
+    key?: string | undefined;
     icon?: any;
     element?: any;
     children?: any;
@@ -80,7 +80,7 @@ MenuInformation\[\]
 </tbody></table>
 **Returns:**
 
-({ resourcelist: ResourceList\[\] \| undefined; menuid?: number; menuId?: number; parentid?: number; parentId?: number; parentname?: string; parentName?: string; resourceList?: ResourceList\[\]; sort?: number; label?: string; key?: string; icon?: any; element?: any; children?: any; } \| null)\[\]
+({ resourcelist: ResourceList\[\] \| undefined; menuid?: number \| undefined; menuId?: number \| undefined; parentid?: number \| undefined; parentId?: number \| undefined; parentname?: string \| undefined; parentName?: string \| undefined; resourceList?: ResourceList\[\] \| undefined; sort?: number \| undefined; label?: string \| undefined; key?: string \| undefined; icon?: any; element?: any; children?: any; } \| null)\[\]
 
 {<!-- -->Array<!-- -->} 用于渲染的路由树
 

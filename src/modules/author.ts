@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
+import JSEncrypt from "jsencrypt";
 import type { ResourceItem } from "../types";
+
 /**
  * 生成TraceId
  * @param {string} origin 请求源（请求发起方）
@@ -158,4 +160,36 @@ export const author_router_add = (origin: MenuInformation[], local: MenuInformat
       return null;
     })
     ?.filter(Boolean);
+};
+
+// Base64 转二进制
+const base64ToBinary = (base64: any) => {
+  const binaryString = atob(base64);
+  const bytes = new Uint8Array(binaryString.length);
+  for (let i = 0; i < binaryString.length; i++) {
+    bytes[i] = binaryString.charCodeAt(i);
+  }
+  return bytes;
+};
+
+// 二进制转 16 进制
+const binaryToHex = (binary: any) => {
+  const hexArray = Array.from(binary).map((byte: any) => byte.toString(16).padStart(2, "0"));
+  return hexArray.join("");
+};
+
+/**
+ * RSA数据加密处理，用于密码加密传输
+ * @param {String} pubKey 公钥
+ * @param {String} password 密码
+ * @returns {String} 加密后的数据，吐出为十六进制
+ */
+export const author_rsa = (pubKey: string, password: string) => {
+  const jsEncrypt = new JSEncrypt();
+  jsEncrypt.setPublicKey(pubKey);
+  const result = jsEncrypt.encrypt(password);
+  // 进行转换
+  const binaryData = base64ToBinary(result);
+  const encryptedHex = binaryToHex(binaryData);
+  return encryptedHex;
 };

@@ -52,6 +52,17 @@ Description
 </td></tr>
 <tr><td>
 
+[author\_rsa(pubKey, password)](./sic-util.author_rsa.md)
+
+
+</td><td>
+
+RSA数据加密处理，用于密码加密传输
+
+
+</td></tr>
+<tr><td>
+
 [author\_strict(list, id)](./sic-util.author_strict.md)
 
 
