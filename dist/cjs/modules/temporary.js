@@ -69,8 +69,13 @@ const tem_get_tableHeader = (keyVal, cache, initial) => {
  * @param {*} array  当前枚举配置
  */
 const getOptionConfig = (value, array) => {
-    const findItem = array?.find((item) => item.value === value);
-    return findItem ? findItem : {};
+    if (value || value === 0) {
+        const findItem = array?.find((item) => item.value === value);
+        return findItem ? findItem : {};
+    }
+    else {
+        return {};
+    }
 };
 /**
  * 获取url 文件名 除后缀名以外的地址名  后缀名

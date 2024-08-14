@@ -1,6 +1,6 @@
 {
   "name": "sic-util",
-  "version": "0.1.30",
+  "version": "0.1.31",
   "description": "sic utils by zijin",
   "type": "module",
   "author": "",
@@ -40,6 +40,7 @@
     }
   },
   "dependencies": {
+    "@babel/core": "^7.25.2",
     "china-division": "^2.7.0",
     "crypto-js": "^4.2.0",
     "dayjs": "^1.11.11",

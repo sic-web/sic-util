@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a4 as n}from"./chunks/framework.PLIGnzYk.js";const u=JSON.parse('{"title":"sic-util","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),e={name:"README.md"},l=n("",13),t=[l];function p(h,r,k,d,o,c){return i(),a("div",null,t)}const m=s(e,[["render",p]]);export{u as __pageData,m as default};

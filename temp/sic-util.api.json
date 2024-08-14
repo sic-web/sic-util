@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.43.1",
+    "toolVersion": "7.47.6",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -259,7 +259,7 @@
             },
             {
               "kind": "Content",
-              "text": "[] | undefined;\n    menuid?: number | undefined;\n    menuId?: number | undefined;\n    parentid?: number | undefined;\n    parentId?: number | undefined;\n    parentname?: string | undefined;\n    parentName?: string | undefined;\n    resourceList?: "
+              "text": "[] | undefined;\n    menuid?: number;\n    menuId?: number;\n    parentid?: number;\n    parentId?: number;\n    parentname?: string;\n    parentName?: string;\n    resourceList?: "
             },
             {
               "kind": "Reference",
@@ -268,7 +268,7 @@
             },
             {
               "kind": "Content",
-              "text": "[] | undefined;\n    sort?: number | undefined;\n    label?: string | undefined;\n    key?: string | undefined;\n    icon?: any;\n    element?: any;\n    children?: any;\n} | null)[]"
+              "text": "[];\n    sort?: number;\n    label?: string;\n    key?: string;\n    icon?: any;\n    element?: any;\n    children?: any;\n} | null)[]"
             }
           ],
           "fileUrlPath": "dist/types/modules/author.d.ts",
@@ -891,7 +891,7 @@
             },
             {
               "kind": "Content",
-              "text": "number"
+              "text": "number | undefined"
             },
             {
               "kind": "Content",
