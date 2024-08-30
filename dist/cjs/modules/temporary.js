@@ -69,7 +69,7 @@ const tem_get_tableHeader = (keyVal, cache, initial) => {
  * @param {*} array  当前枚举配置
  */
 const getOptionConfig = (value, array) => {
-    if (value || value === 0) {
+    if (!!value || value === 0) {
         const findItem = array?.find((item) => item.value === value);
         return findItem ? findItem : {};
     }

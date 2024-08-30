@@ -14,16 +14,16 @@ export const author_passwordCheck: (str: string) => number;
 // @public
 export const author_router_add: (origin: MenuInformation[], local: MenuInformation[]) => ({
     resourcelist: ResourceList[] | undefined;
-    menuid?: number | undefined;
-    menuId?: number | undefined;
-    parentid?: number | undefined;
-    parentId?: number | undefined;
-    parentname?: string | undefined;
-    parentName?: string | undefined;
-    resourceList?: ResourceList[] | undefined;
-    sort?: number | undefined;
-    label?: string | undefined;
-    key?: string | undefined;
+    menuid?: number;
+    menuId?: number;
+    parentid?: number;
+    parentId?: number;
+    parentname?: string;
+    parentName?: string;
+    resourceList?: ResourceList[];
+    sort?: number;
+    label?: string;
+    key?: string;
     icon?: any;
     element?: any;
     children?: any;
@@ -87,7 +87,7 @@ export const file_open: (props: IProps) => void;
 export const get_multiple_color: (value: string | null, opacity: number) => string;
 
 // @public
-export const getOptionConfig: (value: number | undefined, array: any[]) => any;
+export const getOptionConfig: (value: any, array: any[]) => any;
 
 // @public
 export const getUrlConfig: (url: string | null) => {

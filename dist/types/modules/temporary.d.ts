@@ -13,7 +13,7 @@ declare const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], in
  * @param {*} value 当前value值
  * @param {*} array  当前枚举配置
  */
-declare const getOptionConfig: (value: number | undefined, array: any[]) => any;
+declare const getOptionConfig: (value: any, array: any[]) => any;
 /**
  * 获取url 文件名 除后缀名以外的地址名  后缀名
  * @param {*} url 地址

@@ -9,7 +9,7 @@
 **Signature:**
 
 ```typescript
-getOptionConfig: (value: number | undefined, array: any[]) => any
+getOptionConfig: (value: any, array: any[]) => any
 ```
 
 ## Parameters
@@ -37,7 +37,7 @@ value
 
 </td><td>
 
-number \| undefined
+any
 
 
 </td><td>
