@@ -4,12 +4,10 @@
 
 ## val\_email() function
 
-函数"validation\_email"检查 TypeScript 中的给定值是否是邮箱。
-
 **Signature:**
 
 ```typescript
-val_email: (value?: any) => boolean
+val_email: (_: any, value: any) => Promise<void>
 ```
 
 ## Parameters
@@ -32,6 +30,20 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+\_
+
+
+</td><td>
+
+any
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 value
 
 
@@ -42,14 +54,10 @@ any
 
 </td><td>
 
-_(Optional)_ "validation\_email" 函数中的 "value" 参数是可选的，可以是任何数据类型。
-
 
 </td></tr>
 </tbody></table>
 **Returns:**
 
-boolean
-
-函数 "validation\_email" 返回一个布尔值，指示输入的 "value" 是否是邮箱。
+Promise&lt;void&gt;
 

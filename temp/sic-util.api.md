@@ -139,26 +139,38 @@ export const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], ini
 // @public
 export const timejs: (props?: any, props1?: any, props2?: any) => dayjs.Dayjs;
 
-// @public
-export const val_edgeSpace: (value?: any) => boolean;
+// @public (undocumented)
+export const val_age: (_: any, value: any) => Promise<void>;
 
-// @public
-export const val_email: (value?: any) => boolean;
+// @public (undocumented)
+export const val_amount: (_: any, value: any) => Promise<void>;
 
-// @public
-export const val_empty: (value?: any) => boolean;
+// @public (undocumented)
+export const val_beforeAfter_space: (_: any, value: any) => Promise<void>;
 
-// @public
-export const val_idCard: (value?: any) => boolean;
+// @public (undocumented)
+export const val_email: (_: any, value: any) => Promise<void>;
 
-// @public
-export const val_num: (value?: any) => boolean;
+// @public (undocumented)
+export const val_idcard: (_rule: any, value: any) => Promise<void>;
 
-// @public
-export const val_phone: (value?: any) => boolean;
+// @public (undocumented)
+export const val_landline: (_: any, value: any) => Promise<void>;
 
-// @public
-export const val_space: (value?: any) => boolean;
+// @public (undocumented)
+export const val_number: (_: any, value: any) => Promise<void>;
+
+// @public (undocumented)
+export const val_phone: (_: any, value: any) => Promise<void>;
+
+// @public (undocumented)
+export const val_space: (_: any, value: any) => Promise<void>;
+
+// @public (undocumented)
+export const val_three_percent: (_: any, value: any) => Promise<void>;
+
+// @public (undocumented)
+export const val_two_percent: (_: any, value: any) => Promise<void>;
 
 // @public
 export const win_dynamic_fontSize: () => void;

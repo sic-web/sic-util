@@ -4,12 +4,10 @@
 
 ## val\_phone() function
 
-函数"validation\_phone"检查 TypeScript 中的给定值是否是手机号。
-
 **Signature:**
 
 ```typescript
-val_phone: (value?: any) => boolean
+val_phone: (_: any, value: any) => Promise<void>
 ```
 
 ## Parameters
@@ -32,6 +30,20 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+\_
+
+
+</td><td>
+
+any
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 value
 
 
@@ -42,14 +54,10 @@ any
 
 </td><td>
 
-_(Optional)_ "validation\_phone" 函数中的 "value" 参数是可选的，可以是任何数据类型。
-
 
 </td></tr>
 </tbody></table>
 **Returns:**
 
-boolean
-
-函数 "validation\_phone" 返回一个布尔值，指示输入的 "value" 是否是手机号。
+Promise&lt;void&gt;
 

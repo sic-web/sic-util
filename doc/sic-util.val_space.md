@@ -4,12 +4,10 @@
 
 ## val\_space() function
 
-函数"val\_space"检查 TypeScript 中的给定值是否有空格。
-
 **Signature:**
 
 ```typescript
-val_space: (value?: any) => boolean
+val_space: (_: any, value: any) => Promise<void>
 ```
 
 ## Parameters
@@ -32,6 +30,20 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+\_
+
+
+</td><td>
+
+any
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 value
 
 
@@ -42,14 +54,10 @@ any
 
 </td><td>
 
-_(Optional)_ "val\_space" 函数中的 "value" 参数是可选的，可以是任何数据类型。
-
 
 </td></tr>
 </tbody></table>
 **Returns:**
 
-boolean
-
-函数 "val\_space" 返回一个布尔值，指示输入的 "value" 是否有空格。
+Promise&lt;void&gt;
 

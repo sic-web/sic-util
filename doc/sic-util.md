@@ -325,78 +325,100 @@ timejs 依赖于 dayjs 构建，形成管理时间的工具函数 TypeScript 中
 </td></tr>
 <tr><td>
 
-[val\_edgeSpace(value)](./sic-util.val_edgespace.md)
+[val\_age(\_, value)](./sic-util.val_age.md)
 
 
 </td><td>
-
-函数"val\_space"检查 TypeScript 中的给定值头尾是否有空格。
 
 
 </td></tr>
 <tr><td>
 
-[val\_email(value)](./sic-util.val_email.md)
+[val\_amount(\_, value)](./sic-util.val_amount.md)
 
 
 </td><td>
-
-函数"validation\_email"检查 TypeScript 中的给定值是否是邮箱。
 
 
 </td></tr>
 <tr><td>
 
-[val\_empty(value)](./sic-util.val_empty.md)
+[val\_beforeAfter\_space(\_, value)](./sic-util.val_beforeafter_space.md)
 
 
 </td><td>
-
-函数"val\_space"检查 TypeScript 中的给定值是否为空。
 
 
 </td></tr>
 <tr><td>
 
-[val\_idCard(value)](./sic-util.val_idcard.md)
+[val\_email(\_, value)](./sic-util.val_email.md)
 
 
 </td><td>
-
-函数"validation\_idCard"检查 TypeScript 中的给定值是否是身份证号码。
 
 
 </td></tr>
 <tr><td>
 
-[val\_num(value)](./sic-util.val_num.md)
+[val\_idcard(\_rule, value)](./sic-util.val_idcard.md)
 
 
 </td><td>
-
-函数"validation\_num"检查 TypeScript 中的给定值是否是数字。
 
 
 </td></tr>
 <tr><td>
 
-[val\_phone(value)](./sic-util.val_phone.md)
+[val\_landline(\_, value)](./sic-util.val_landline.md)
 
 
 </td><td>
-
-函数"validation\_phone"检查 TypeScript 中的给定值是否是手机号。
 
 
 </td></tr>
 <tr><td>
 
-[val\_space(value)](./sic-util.val_space.md)
+[val\_number(\_, value)](./sic-util.val_number.md)
 
 
 </td><td>
 
-函数"val\_space"检查 TypeScript 中的给定值是否有空格。
+
+</td></tr>
+<tr><td>
+
+[val\_phone(\_, value)](./sic-util.val_phone.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[val\_space(\_, value)](./sic-util.val_space.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[val\_three\_percent(\_, value)](./sic-util.val_three_percent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[val\_two\_percent(\_, value)](./sic-util.val_two_percent.md)
+
+
+</td><td>
 
 
 </td></tr>

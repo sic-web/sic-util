@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.47.7",
+    "toolVersion": "7.48.0",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -1693,12 +1693,20 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "sic-util!val_edgeSpace:function(1)",
-          "docComment": "/**\n * 函数\"val_space\"检查 TypeScript 中的给定值头尾是否有空格。\n *\n * @param value - \"val_space\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"val_space\" 返回一个布尔值，指示输入的 \"value\" 头尾是否有空格。\n */\n",
+          "canonicalReference": "sic-util!val_age:function(1)",
+          "docComment": "",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "val_edgeSpace: (value?: "
+              "text": "val_age: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
             },
             {
               "kind": "Content",
@@ -1709,37 +1717,182 @@
               "text": ") => "
             },
             {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
               "kind": "Content",
-              "text": "boolean"
+              "text": "<void>"
             }
           ],
           "fileUrlPath": "dist/types/modules/validation.d.ts",
           "returnTypeTokenRange": {
-            "startIndex": 3,
-            "endIndex": 4
+            "startIndex": 5,
+            "endIndex": 7
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "value",
+              "parameterName": "_",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
               },
-              "isOptional": true
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
             }
           ],
-          "name": "val_edgeSpace"
+          "name": "val_age"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_amount:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_amount: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "_",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "val_amount"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_beforeAfter_space:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_beforeAfter_space: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "_",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "val_beforeAfter_space"
         },
         {
           "kind": "Function",
           "canonicalReference": "sic-util!val_email:function(1)",
-          "docComment": "/**\n * 函数\"validation_email\"检查 TypeScript 中的给定值是否是邮箱。\n *\n * @param value - \"validation_email\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"validation_email\" 返回一个布尔值，指示输入的 \"value\" 是否是邮箱。\n */\n",
+          "docComment": "",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "val_email: (value?: "
+              "text": "val_email: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
             },
             {
               "kind": "Content",
@@ -1750,37 +1903,58 @@
               "text": ") => "
             },
             {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
               "kind": "Content",
-              "text": "boolean"
+              "text": "<void>"
             }
           ],
           "fileUrlPath": "dist/types/modules/validation.d.ts",
           "returnTypeTokenRange": {
-            "startIndex": 3,
-            "endIndex": 4
+            "startIndex": 5,
+            "endIndex": 7
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "value",
+              "parameterName": "_",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
               },
-              "isOptional": true
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
             }
           ],
           "name": "val_email"
         },
         {
           "kind": "Function",
-          "canonicalReference": "sic-util!val_empty:function(1)",
-          "docComment": "/**\n * 函数\"val_space\"检查 TypeScript 中的给定值是否为空。\n *\n * @param value - \"val_space\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"val_space\" 返回一个布尔值，指示输入的 \"value\" 头尾是否有空格。\n */\n",
+          "canonicalReference": "sic-util!val_idcard:function(1)",
+          "docComment": "",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "val_empty: (value?: "
+              "text": "val_idcard: (_rule: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
             },
             {
               "kind": "Content",
@@ -1791,37 +1965,58 @@
               "text": ") => "
             },
             {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
               "kind": "Content",
-              "text": "boolean"
+              "text": "<void>"
             }
           ],
           "fileUrlPath": "dist/types/modules/validation.d.ts",
           "returnTypeTokenRange": {
-            "startIndex": 3,
-            "endIndex": 4
+            "startIndex": 5,
+            "endIndex": 7
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "value",
+              "parameterName": "_rule",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
               },
-              "isOptional": true
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
             }
           ],
-          "name": "val_empty"
+          "name": "val_idcard"
         },
         {
           "kind": "Function",
-          "canonicalReference": "sic-util!val_idCard:function(1)",
-          "docComment": "/**\n * 函数\"validation_idCard\"检查 TypeScript 中的给定值是否是身份证号码。\n *\n * @param value - \"validation_idCard\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"validation_idCard\" 返回一个布尔值，指示输入的 \"value\" 是否是身份证号码。\n */\n",
+          "canonicalReference": "sic-util!val_landline:function(1)",
+          "docComment": "",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "val_idCard: (value?: "
+              "text": "val_landline: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
             },
             {
               "kind": "Content",
@@ -1832,37 +2027,58 @@
               "text": ") => "
             },
             {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
               "kind": "Content",
-              "text": "boolean"
+              "text": "<void>"
             }
           ],
           "fileUrlPath": "dist/types/modules/validation.d.ts",
           "returnTypeTokenRange": {
-            "startIndex": 3,
-            "endIndex": 4
+            "startIndex": 5,
+            "endIndex": 7
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "value",
+              "parameterName": "_",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
               },
-              "isOptional": true
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
             }
           ],
-          "name": "val_idCard"
+          "name": "val_landline"
         },
         {
           "kind": "Function",
-          "canonicalReference": "sic-util!val_num:function(1)",
-          "docComment": "/**\n * 函数\"validation_num\"检查 TypeScript 中的给定值是否是数字。\n *\n * @param value - `validation_num` 函数中的 `value` 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数“validation_num”返回一个布尔值，指示输入的“value”是否是数字。\n */\n",
+          "canonicalReference": "sic-util!val_number:function(1)",
+          "docComment": "",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "val_num: (value?: "
+              "text": "val_number: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
             },
             {
               "kind": "Content",
@@ -1873,37 +2089,58 @@
               "text": ") => "
             },
             {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
               "kind": "Content",
-              "text": "boolean"
+              "text": "<void>"
             }
           ],
           "fileUrlPath": "dist/types/modules/validation.d.ts",
           "returnTypeTokenRange": {
-            "startIndex": 3,
-            "endIndex": 4
+            "startIndex": 5,
+            "endIndex": 7
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "value",
+              "parameterName": "_",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
               },
-              "isOptional": true
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
             }
           ],
-          "name": "val_num"
+          "name": "val_number"
         },
         {
           "kind": "Function",
           "canonicalReference": "sic-util!val_phone:function(1)",
-          "docComment": "/**\n * 函数\"validation_phone\"检查 TypeScript 中的给定值是否是手机号。\n *\n * @param value - \"validation_phone\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"validation_phone\" 返回一个布尔值，指示输入的 \"value\" 是否是手机号。\n */\n",
+          "docComment": "",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "val_phone: (value?: "
+              "text": "val_phone: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
             },
             {
               "kind": "Content",
@@ -1914,25 +2151,38 @@
               "text": ") => "
             },
             {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
               "kind": "Content",
-              "text": "boolean"
+              "text": "<void>"
             }
           ],
           "fileUrlPath": "dist/types/modules/validation.d.ts",
           "returnTypeTokenRange": {
-            "startIndex": 3,
-            "endIndex": 4
+            "startIndex": 5,
+            "endIndex": 7
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "value",
+              "parameterName": "_",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
               },
-              "isOptional": true
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
             }
           ],
           "name": "val_phone"
@@ -1940,11 +2190,19 @@
         {
           "kind": "Function",
           "canonicalReference": "sic-util!val_space:function(1)",
-          "docComment": "/**\n * 函数\"val_space\"检查 TypeScript 中的给定值是否有空格。\n *\n * @param value - \"val_space\" 函数中的 \"value\" 参数是可选的，可以是任何数据类型。\n *\n * @returns 函数 \"val_space\" 返回一个布尔值，指示输入的 \"value\" 是否有空格。\n */\n",
+          "docComment": "",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "val_space: (value?: "
+              "text": "val_space: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
             },
             {
               "kind": "Content",
@@ -1955,28 +2213,165 @@
               "text": ") => "
             },
             {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
               "kind": "Content",
-              "text": "boolean"
+              "text": "<void>"
             }
           ],
           "fileUrlPath": "dist/types/modules/validation.d.ts",
           "returnTypeTokenRange": {
-            "startIndex": 3,
-            "endIndex": 4
+            "startIndex": 5,
+            "endIndex": 7
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "value",
+              "parameterName": "_",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
               },
-              "isOptional": true
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
             }
           ],
           "name": "val_space"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_three_percent:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_three_percent: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "_",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "val_three_percent"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!val_two_percent:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "val_two_percent: (_: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/validation.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "_",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "val_two_percent"
         },
         {
           "kind": "Function",
