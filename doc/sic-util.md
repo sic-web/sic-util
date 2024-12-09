@@ -325,15 +325,6 @@ timejs 依赖于 dayjs 构建，形成管理时间的工具函数 TypeScript 中
 </td></tr>
 <tr><td>
 
-[val\_age(\_, value)](./sic-util.val_age.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [val\_amount(\_, value)](./sic-util.val_amount.md)
 
 

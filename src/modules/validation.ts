@@ -50,90 +50,20 @@ export const val_three_percent = (_: any, value: any) => {
   }
 };
 
-// 年龄校验
-export const val_age = (_: any, value: any) => {
-  const validateInput = (input: number | string) => {
-    if (!input) {
-      return "输入框不能为空！";
-    }
-    if (/\s/.test(input?.toString())) {
-      return "请去除文本前后及内容中的空格！";
-    }
-    if (Number(input) < 0 || Number(input) > 150 || !Number.isInteger(input)) {
-      return "请输入合法的年龄！";
-    }
-
-    return;
-  };
-  if (typeof value === "object" && value !== null) {
-    // 如果是对象，分别校验每个键的值
-    const errors: string[] = [];
-    Object.keys(value).forEach((key) => {
-      const inputValue = value[key];
-      const error = validateInput(inputValue);
-      if (error) {
-        errors.push(`${key}: ${error}`);
-      }
-    });
-
-    if (errors?.length > 0) {
-      return Promise.reject(new Error(errors.join("\n")));
-    } else {
-      return Promise.resolve();
-    }
-  } else {
-    // 如果是单个值，直接校验
-    const error = validateInput(value);
-    if (error) {
-      return Promise.reject(new Error(error));
-    } else {
-      return Promise.resolve();
-    }
-  }
-};
 // 金额文本 支持到小数点后两位
 export const val_amount = (_: any, value: any) => {
-  const validateInput = (input: number | string) => {
-    const newInput = input?.toString();
-    if (!newInput) {
-      return "输入框不能为空！";
-    }
-    if (/\s/.test(newInput)) {
-      return "请去除文本前后及内容中的空格！";
-    }
-    if (isNaN(Number(newInput))) {
-      return "请输入有效的数字文本！";
-    }
-    if (!/^\d+(\.\d{1,2})?$/.test(newInput)) {
-      return "最多支持两位小数！";
-    }
-    return;
-  };
-
-  if (typeof value === "object" && value !== null) {
-    // 如果是对象，分别校验每个键的值
-    const errors: string[] = [];
-    Object.keys(value).forEach((key) => {
-      const inputValue = value[key];
-      const error = validateInput(inputValue);
-      if (error) {
-        errors.push(`${key}: ${error}`);
-      }
-    });
-
-    if (errors?.length > 0) {
-      return Promise.reject(new Error(errors.join("\n")));
+  if (value) {
+    if (/\s/.test(value)) {
+      return Promise.reject(new Error("请去除文本前后及内容中的空格！"));
+    } else if (isNaN(Number(value))) {
+      return Promise.reject(new Error("请输入有效的数字文本！"));
+    } else if (!/^\d+(\.\d{1,2})?$/.test(value)) {
+      return Promise.reject(new Error("最多支持两位小数！"));
     } else {
       return Promise.resolve();
     }
   } else {
-    // 如果是单个值，直接校验
-    const error = validateInput(value);
-    if (error) {
-      return Promise.reject(new Error(error));
-    } else {
-      return Promise.resolve();
-    }
+    return Promise.resolve();
   }
 };
 

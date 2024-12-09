@@ -42,7 +42,6 @@ exports.getUrlConfig = temporary.getUrlConfig;
 exports.tem_compare_version = temporary.tem_compare_version;
 exports.tem_get_tableHeader = temporary.tem_get_tableHeader;
 exports.timejs = timejs.timejs;
-exports.val_age = validation.val_age;
 exports.val_amount = validation.val_amount;
 exports.val_beforeAfter_space = validation.val_beforeAfter_space;
 exports.val_email = validation.val_email;

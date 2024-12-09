@@ -7,5 +7,5 @@ export { num_expand, num_expand_100, num_reduce_100, num_text } from './modules/
 export { sys_detectBrowser, sys_print } from './modules/system.js';
 export { getOptionConfig, getUrlConfig, tem_compare_version, tem_get_tableHeader } from './modules/temporary.js';
 export { timejs } from './modules/timejs.js';
-export { val_age, val_amount, val_beforeAfter_space, val_email, val_idcard, val_landline, val_number, val_phone, val_space, val_three_percent, val_two_percent } from './modules/validation.js';
+export { val_amount, val_beforeAfter_space, val_email, val_idcard, val_landline, val_number, val_phone, val_space, val_three_percent, val_two_percent } from './modules/validation.js';
 export { win_dynamic_fontSize } from './modules/window.js';

@@ -140,9 +140,6 @@ export const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], ini
 export const timejs: (props?: any, props1?: any, props2?: any) => dayjs.Dayjs;
 
 // @public (undocumented)
-export const val_age: (_: any, value: any) => Promise<void>;
-
-// @public (undocumented)
 export const val_amount: (_: any, value: any) => Promise<void>;
 
 // @public (undocumented)
