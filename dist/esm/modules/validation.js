@@ -189,10 +189,7 @@ const val_phone = (_, value) => {
 const val_landline = (_, value) => {
     if (value) {
         const landlinePhoneRegex = /^[\d\s()-]+$/;
-        if (/\s/.test(value)) {
-            return Promise.reject(new Error("请去除文本前后及内容中的空格！"));
-        }
-        else if (!landlinePhoneRegex.test(value)) {
+        if (!landlinePhoneRegex.test(value)) {
             return Promise.reject(new Error("联系电话格式不正确！"));
         }
         else {
