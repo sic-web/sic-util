@@ -26,7 +26,7 @@ const val_two_percent = (_, value) => {
         else if (isNaN(Number(value))) {
             return Promise.reject(new Error("请输入有效的数字文本！"));
         }
-        else if (Number(value) < 0 || Number(value) > 100) {
+        else if (Number(value) <= 0 || Number(value) >= 100) {
             return Promise.reject(new Error("范围必须在0到100之间！"));
         }
         else if (!/^\d+(\.\d{1,2})?$/.test(value)) {
@@ -49,7 +49,7 @@ const val_three_percent = (_, value) => {
         else if (isNaN(Number(value))) {
             return Promise.reject(new Error("请输入有效的数字文本！"));
         }
-        else if (Number(value) < 0 || Number(value) > 100) {
+        else if (Number(value) <= 0 || Number(value) >= 100) {
             return Promise.reject(new Error("范围必须在0到100之间！"));
         }
         else if (!/^\d+(\.\d{1,3})?$/.test(value)) {
