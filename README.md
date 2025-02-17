@@ -1,4 +1,4 @@
-<a href="https://lmy1818.github.io/sic-util/" target="_blank">
+<a href="https://sic-web.github.io/sic-util/" target="_blank">
   <img height="180" src="https://testfile.stlg.com.cn/public_image/83fd6378a13df21f2c3caa160ba62565/单logo(2).png">
 </a>
 
@@ -9,7 +9,7 @@
 
 A universal tool function repository
 
-https://lmy1818.github.io/sic-util/
+https://sic-web.github.io/sic-util/
 
 ## Usage
 
