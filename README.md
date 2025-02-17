@@ -9,7 +9,7 @@
 
 A universal tool function repository
 
-https://sicweb.gitlab.io/sic-util/
+https://lmy1818.github.io/sic-util/
 
 ## Usage
 
