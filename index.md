@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "sic-utils"
+  name: "sic-util"
   text: "A universal tool function repository"
   tagline: My great project tagline
   actions:
