@@ -70,8 +70,9 @@ const tree = fg
 const docs: DefaultTheme.SidebarItem[] = treeToItems(tree);
 
 export default defineConfig({
+  base: "/sic-util/",
   title: "Utils",
-  description: "Documentations of zijin",
+  description: "",
   themeConfig: {
     nav: [
       { text: "Home", link: "/doc/index" },
