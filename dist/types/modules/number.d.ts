@@ -11,6 +11,7 @@ declare const num_expand: (amount: number | string, unit?: number, accuracy?: nu
  * @param {*} accuracy 保留几位小数，默认2位
  */
 declare const num_expand_100: (amount: number | string, accuracy?: number) => string | number;
+declare const num_unit: (amount: number | string) => string | number;
 /**
  * 单位缩小两位，一般用于（元->分）（数->百分数）
  * @param {*} amount 当前金额
@@ -26,4 +27,4 @@ declare const num_reduce_100: (amount: any) => any;
  */
 declare const num_text: (number: number | string | undefined, type?: string) => string | false;
 
-export { num_expand, num_expand_100, num_reduce_100, num_text };
+export { num_expand, num_expand_100, num_reduce_100, num_text, num_unit };

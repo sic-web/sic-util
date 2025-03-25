@@ -35,6 +35,7 @@ exports.num_expand = number.num_expand;
 exports.num_expand_100 = number.num_expand_100;
 exports.num_reduce_100 = number.num_reduce_100;
 exports.num_text = number.num_text;
+exports.num_unit = number.num_unit;
 exports.sys_detectBrowser = system.sys_detectBrowser;
 exports.sys_print = system.sys_print;
 exports.getOptionConfig = temporary.getOptionConfig;

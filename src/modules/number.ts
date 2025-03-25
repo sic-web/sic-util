@@ -28,7 +28,16 @@ export const num_expand_100 = (amount: number | string, accuracy = 2) => {
     return amount;
   }
 };
-
+export const num_unit = (amount: number | string) => {
+  const num = Number(amount);
+  if (Math.abs(num) >= 100000000) {
+    return `${num_expand(amount, 100000000)} 亿`;
+  } else if (Math.abs(num) >= 10000) {
+    return `${num_expand(amount, 10000)} 万`;
+  } else {
+    return amount;
+  }
+};
 /**
  * 单位缩小两位，一般用于（元->分）（数->百分数）
  * @param {*} amount 当前金额

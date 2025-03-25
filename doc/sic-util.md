@@ -250,6 +250,15 @@ RSA数据加密处理，用于密码加密传输
 </td></tr>
 <tr><td>
 
+[num\_unit(amount)](./sic-util.num_unit.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [reduce\_opacity(rgb, opacity)](./sic-util.reduce_opacity.md)
 
 
