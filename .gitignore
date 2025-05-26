@@ -9,16 +9,9 @@ lerna-debug.log*
 package-lock.json*
 
 node_modules
-dist
-dist-ssr
-*.local
-
-
-
 temp
 trace.log
 cache
-
 
 # Editor directories and files
 .vscode/*

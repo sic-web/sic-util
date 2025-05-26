@@ -1,0 +1,55 @@
+'use strict';
+
+var author = require('./modules/author.js');
+var cityOptions = require('./modules/cityOptions.js');
+var color = require('./modules/color.js');
+var demo = require('./modules/demo.js');
+var file = require('./modules/file.js');
+var number = require('./modules/number.js');
+var other = require('./modules/other.js');
+var validation = require('./modules/validation.js');
+
+
+
+exports.author_passwordCheck = author.author_passwordCheck;
+exports.author_router_add = author.author_router_add;
+exports.author_router_filter = author.author_router_filter;
+exports.author_rsa = author.author_rsa;
+exports.author_strict = author.author_strict;
+exports.author_traceId = author.author_traceId;
+exports.city_code_text = cityOptions.city_code_text;
+exports.city_options = cityOptions.city_options;
+exports.city_two_code_text = cityOptions.city_two_code_text;
+exports.get_multiple_color = color.get_multiple_color;
+exports.hex_to_rgb = color.hex_to_rgb;
+exports.reduce_opacity = color.reduce_opacity;
+exports.rgb_to_hex = color.rgb_to_hex;
+exports.theme_change = color.theme_change;
+exports.demo = demo.demo;
+exports.file_calculate_md5 = file.file_calculate_md5;
+exports.file_load = file.file_load;
+exports.file_open = file.file_open;
+exports.num_expand = number.num_expand;
+exports.num_expand_100 = number.num_expand_100;
+exports.num_reduce_100 = number.num_reduce_100;
+exports.num_text = number.num_text;
+exports.num_unit = number.num_unit;
+exports.getOptionConfig = other.getOptionConfig;
+exports.getUrlConfig = other.getUrlConfig;
+exports.sys_detectBrowser = other.sys_detectBrowser;
+exports.sys_print = other.sys_print;
+exports.tem_compare_version = other.tem_compare_version;
+exports.tem_get_tableHeader = other.tem_get_tableHeader;
+exports.timejs = other.timejs;
+exports.video_preview = other.video_preview;
+exports.win_dynamic_fontSize = other.win_dynamic_fontSize;
+exports.val_amount = validation.val_amount;
+exports.val_beforeAfter_space = validation.val_beforeAfter_space;
+exports.val_email = validation.val_email;
+exports.val_idcard = validation.val_idcard;
+exports.val_landline = validation.val_landline;
+exports.val_number = validation.val_number;
+exports.val_phone = validation.val_phone;
+exports.val_space = validation.val_space;
+exports.val_three_percent = validation.val_three_percent;
+exports.val_two_percent = validation.val_two_percent;

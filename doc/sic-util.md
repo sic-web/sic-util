@@ -323,6 +323,17 @@ RSA数据加密处理，用于密码加密传输
 </td></tr>
 <tr><td>
 
+[theme\_change(value)](./sic-util.theme_change.md)
+
+
+</td><td>
+
+该函数用于生成主题颜色。
+
+
+</td></tr>
+<tr><td>
+
 [timejs(props, props1, props2)](./sic-util.timejs.md)
 
 
@@ -419,6 +430,17 @@ timejs 依赖于 dayjs 构建，形成管理时间的工具函数 TypeScript 中
 
 
 </td><td>
+
+
+</td></tr>
+<tr><td>
+
+[video\_preview(videoUrl)](./sic-util.video_preview.md)
+
+
+</td><td>
+
+从视频地址中提取第一帧作为预览图（base64 格式）
 
 
 </td></tr>

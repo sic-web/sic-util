@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.52.1",
+    "toolVersion": "7.52.8",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -967,7 +967,7 @@
               "text": "any"
             }
           ],
-          "fileUrlPath": "dist/types/modules/temporary.d.ts",
+          "fileUrlPath": "dist/types/modules/other.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 5,
             "endIndex": 6
@@ -1016,7 +1016,7 @@
               "text": "{\n    fileName: string;\n    prefix: string;\n    suffix: string;\n} | null"
             }
           ],
-          "fileUrlPath": "dist/types/modules/temporary.d.ts",
+          "fileUrlPath": "dist/types/modules/other.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4
@@ -1542,7 +1542,7 @@
               "text": "boolean"
             }
           ],
-          "fileUrlPath": "dist/types/modules/temporary.d.ts",
+          "fileUrlPath": "dist/types/modules/other.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 5,
             "endIndex": 6
@@ -1623,7 +1623,7 @@
               "text": "[]"
             }
           ],
-          "fileUrlPath": "dist/types/modules/temporary.d.ts",
+          "fileUrlPath": "dist/types/modules/other.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 9,
             "endIndex": 11
@@ -1657,6 +1657,47 @@
             }
           ],
           "name": "tem_get_tableHeader"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "sic-util!theme_change:function(1)",
+          "docComment": "/**\n * 该函数用于生成主题颜色。\n *\n * @param value - 主题颜色值\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "theme_change: (value: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/color.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "theme_change"
         },
         {
           "kind": "Function",
@@ -1697,7 +1738,7 @@
               "canonicalReference": "dayjs!dayjs.Dayjs:class"
             }
           ],
-          "fileUrlPath": "dist/types/modules/timejs.d.ts",
+          "fileUrlPath": "dist/types/modules/other.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 7,
             "endIndex": 8
@@ -2354,6 +2395,52 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "sic-util!video_preview:function(1)",
+          "docComment": "/**\n * 从视频地址中提取第一帧作为预览图（base64 格式）\n *\n * @param videoUrl - 视频地址（支持跨域或 Blob URL）\n *\n * @returns 返回一个 Promise<string>，成功时返回 base64 图片，失败返回空字符串\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "video_preview: (videoUrl: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<string>"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/other.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "videoUrl",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "video_preview"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "sic-util!win_dynamic_fontSize:function(1)",
           "docComment": "/**\n * 函数“win_dynamic_fontSize”根据当前屏幕宽度计算并设置文档的字体大小。\n */\n",
           "excerptTokens": [
@@ -2366,7 +2453,7 @@
               "text": "void"
             }
           ],
-          "fileUrlPath": "dist/types/modules/window.d.ts",
+          "fileUrlPath": "dist/types/modules/other.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 2

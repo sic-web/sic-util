@@ -140,6 +140,9 @@ export const tem_compare_version: (version1: string, version2: string) => boolea
 export const tem_get_tableHeader: (keyVal: KeyVal, cache: TableHeaderItem[], initial: TableHeaderItem[]) => TableHeaderItem[];
 
 // @public
+export const theme_change: (value: string) => void;
+
+// @public
 export const timejs: (props?: any, props1?: any, props2?: any) => dayjs.Dayjs;
 
 // @public (undocumented)
@@ -171,6 +174,9 @@ export const val_three_percent: (_: any, value: any) => Promise<void>;
 
 // @public (undocumented)
 export const val_two_percent: (_: any, value: any) => Promise<void>;
+
+// @public
+export const video_preview: (videoUrl: string) => Promise<string>;
 
 // @public
 export const win_dynamic_fontSize: () => void;
