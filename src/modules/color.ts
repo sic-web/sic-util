@@ -56,3 +56,32 @@ export const get_multiple_color = (value: string | null, opacity: number): strin
   const hexColor = rgb_to_hex(multipleColor);
   return hexColor;
 };
+
+/**
+ * 该函数用于生成主题颜色。
+ * @param value - 主题颜色值
+ */
+export const theme_change = (value: string) => {
+  // 创建或获取样式元素
+  let styleEl = document.getElementById("theme-style") as HTMLStyleElement;
+  if (!styleEl) {
+    styleEl = document.createElement("style");
+    styleEl.id = "theme-style";
+    document.head.appendChild(styleEl);
+  }
+
+  // 生成CSS变量
+  let cssText = ":root {\n";
+  cssText += `  --themeColor: ${value};\n`;
+
+  const steps = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5];
+  steps.forEach((step) => {
+    const variableName = `--themeColor${step.toString().replace(".", "_")}`;
+    const colorValue = get_multiple_color(value, step / 10);
+    cssText += `  ${variableName}: ${colorValue};\n`;
+  });
+  cssText += "}";
+
+  // 更新样式表内容
+  styleEl.textContent = cssText;
+};

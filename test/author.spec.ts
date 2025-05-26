@@ -437,7 +437,6 @@ describe("author", () => {
           { resourceId: 89, resourceName: "园区账户列表" },
           { resourceId: 90, resourceName: "快捷入口" },
         ],
-        icon: { type: {}, key: null, ref: null, props: {}, _owner: null, _store: {} },
       },
       {
         key: "/organize",
@@ -473,7 +472,6 @@ describe("author", () => {
             ],
           },
         ],
-        icon: { type: {}, key: null, ref: null, props: {}, _owner: null, _store: {} },
       },
       {
         key: "/task",
@@ -487,7 +485,7 @@ describe("author", () => {
           { resourceId: 78, resourceName: "导出" },
           { resourceId: 80, resourceName: "所有部门任务二维码" },
         ],
-        icon: { type: {}, key: null, ref: null, props: {}, _owner: null, _store: {} },
+
         element: { compare: null },
       },
       {
@@ -501,7 +499,6 @@ describe("author", () => {
           { resourceId: 79, resourceName: "交付图详情", key: "/order/orderDetail" },
           { resourceId: 92, resourceName: "上传身份证" },
         ],
-        icon: { type: {}, key: null, ref: null, props: {}, _owner: null, _store: {} },
       },
       {
         key: "/finance",
@@ -571,7 +568,6 @@ describe("author", () => {
             ],
           },
         ],
-        icon: { type: {}, key: null, ref: null, props: {}, _owner: null, _store: {} },
       },
       {
         key: "/system",
@@ -620,7 +616,6 @@ describe("author", () => {
           { key: "/system/password", menuid: 17, label: "修改密码", resourcelist: [{ resourceId: 41, resourceName: "修改密码" }] },
           { key: "/system/paramsConfig", menuid: 19, label: "参数配置", resourcelist: [], element: { compare: null } },
         ],
-        icon: { type: {}, key: null, ref: null, props: {}, _owner: null, _store: {} },
       },
     ];
 

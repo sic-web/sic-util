@@ -1461,7 +1461,7 @@
               "text": "void"
             }
           ],
-          "fileUrlPath": "dist/types/modules/system.d.ts",
+          "fileUrlPath": "dist/types/modules/other.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 2
@@ -1493,7 +1493,7 @@
               "text": "void"
             }
           ],
-          "fileUrlPath": "dist/types/modules/system.d.ts",
+          "fileUrlPath": "dist/types/modules/other.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4

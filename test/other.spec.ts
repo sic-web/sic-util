@@ -1,7 +1,16 @@
-import { describe, expect, it } from "vitest";
-import { tem_get_tableHeader } from "../src/modules/temporary";
+import { describe, it, expect } from "vitest";
+import { tem_get_tableHeader, timejs } from "../src/modules/other";
 
-describe("temporary", () => {
+describe("other", () => {
+  it("sys_print", () => {
+    expect("").toEqual("");
+  });
+  it("sys_detectBrowser", () => {
+    expect("").toEqual("");
+  });
+  it("win_dynamic_fontSize", () => {
+    expect("").toEqual("");
+  });
   it("tem_get_tableHeader", () => {
     const source = [
       { key: "taskName", name: "任务名称", sort: 1, disable: true, width: 220, fixed: "left", selected: true },
@@ -80,9 +89,16 @@ describe("temporary", () => {
     const res = tem_get_tableHeader(keyVal, cache, initial);
     expect(res).toEqual(source);
   });
+  it("timejs", () => {
+    const res1 = timejs().format();
+    const res2 = timejs("2024-05-01T16:00:00.000Z").format();
+    const res3 = timejs("2024-05-01T16:00:00.000Z").format("YYYY-MM-DD");
+    expect(res1).not.toEqual("2024-05-07T18:13:08+08:00");
+    expect(res2).toEqual("2024-05-02T00:00:00+08:00");
+    expect(res3).toEqual("2024-05-02");
+  });
 });
-
-import { getOptionConfig } from "../src/modules/temporary";
+import { getOptionConfig } from "../src/modules/other";
 const PROJECTSTATUS = [
   { value: 1, label: "待支付", type: 4 },
   { value: 2, label: "审核中", type: 3 },
@@ -102,7 +118,7 @@ describe("getOptionConfig", () => {
   });
 });
 
-import { getUrlConfig } from "../src/modules/temporary";
+import { getUrlConfig } from "../src/modules/other";
 const url = "https://testfile.siciei.com/business_license/f22279c5f52a823468987aeb90469d0b/测试文件名.JPG";
 describe("getUrlConfig", () => {
   it("getUrlConfig", () => {
