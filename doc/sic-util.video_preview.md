@@ -9,7 +9,7 @@
 **Signature:**
 
 ```typescript
-video_preview: (videoUrl: string) => Promise<string>
+video_preview: (videoUrl: string, frameTime?: number) => Promise<string>
 ```
 
 ## Parameters
@@ -43,6 +43,22 @@ string
 </td><td>
 
 视频地址（支持跨域或 Blob URL）
+
+
+</td></tr>
+<tr><td>
+
+frameTime
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ 预览帧时间点（number）
 
 
 </td></tr>

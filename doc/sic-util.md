@@ -435,7 +435,7 @@ timejs 依赖于 dayjs 构建，形成管理时间的工具函数 TypeScript 中
 </td></tr>
 <tr><td>
 
-[video\_preview(videoUrl)](./sic-util.video_preview.md)
+[video\_preview(videoUrl, frameTime)](./sic-util.video_preview.md)
 
 
 </td><td>

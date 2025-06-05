@@ -176,7 +176,7 @@ export const val_three_percent: (_: any, value: any) => Promise<void>;
 export const val_two_percent: (_: any, value: any) => Promise<void>;
 
 // @public
-export const video_preview: (videoUrl: string) => Promise<string>;
+export const video_preview: (videoUrl: string, frameTime?: number) => Promise<string>;
 
 // @public
 export const win_dynamic_fontSize: () => void;
