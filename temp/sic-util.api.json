@@ -2396,7 +2396,7 @@
         {
           "kind": "Function",
           "canonicalReference": "sic-util!video_preview:function(1)",
-          "docComment": "/**\n * 从视频地址中提取第一帧作为预览图（base64 格式）\n *\n * @param videoUrl - 视频地址（支持跨域或 Blob URL）\n *\n * @param frameTime - 预览帧时间点（number）\n *\n * @returns 返回一个 Promise<string>，成功时返回 base64 图片，失败返回空字符串\n */\n",
+          "docComment": "/**\n * 从视频地址中提取第一帧作为预览图（base64 格式）\n *\n * @param videoUrl - 视频地址（支持跨域或 Blob URL）\n *\n * @param frameTime - 预览帧时间点（number）\n *\n * @returns 返回一个Promise，成功时返回 base64 图片，失败返回空字符串\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
