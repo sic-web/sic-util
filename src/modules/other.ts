@@ -167,12 +167,15 @@ export const timejs = (props?: any, props1?: any, props2?: any) => {
 /**
  * 从视频地址中提取第一帧作为预览图（base64 格式）
  * @param videoUrl 视频地址（支持跨域或 Blob URL）
+ * @param frameTime 预览帧时间点（number）
  * @returns 返回一个 Promise<string>，成功时返回 base64 图片，失败返回空字符串
  */
-export const video_preview = (videoUrl: string): Promise<string> => {
+export const video_preview = (videoUrl: string, frameTime: number = 0.1): Promise<string> => {
   return new Promise((resolve) => {
-    // 参数校验：无效地址直接返回空
-    if (!videoUrl || typeof videoUrl !== "string") return resolve("");
+    // 参数校验：无效地址或非法时间直接返回空
+    if (!videoUrl || typeof videoUrl !== "string" || frameTime < 0) {
+      return resolve("");
+    }
 
     // 创建 video 元素用于加载视频
     const video = document.createElement("video");
@@ -201,8 +204,8 @@ export const video_preview = (videoUrl: string): Promise<string> => {
         return resolve("");
       }
 
-      // 设置到第 0.1 秒的位置，确保能获取有效帧
-      video.currentTime = 0.1;
+      // 设置到指定帧位置
+      video.currentTime = frameTime;
     };
 
     // seeked 事件表示视频已经跳转到目标时间点（即已准备好绘制）
@@ -226,7 +229,8 @@ export const video_preview = (videoUrl: string): Promise<string> => {
         // 清理资源并返回结果
         cleanup();
         resolve(imgUrl);
-      } catch {
+      } catch (error) {
+        console.error("Canvas draw error:", error);
         // 绘制过程中出错，清理并返回空
         cleanup();
         resolve("");

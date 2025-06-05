@@ -1,6 +1,6 @@
 {
   "name": "sic-util",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "sic utils",
   "type": "module",
   "author": "",
@@ -18,7 +18,8 @@
     "trace": "tsc dist/types/index.d.ts --traceResolution > trace.log",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "prepublishOnly": "rimraf dist && npm run build"
   },
   "exports": {
     ".": {
