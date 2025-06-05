@@ -168,7 +168,7 @@ export const timejs = (props?: any, props1?: any, props2?: any) => {
  * 从视频地址中提取第一帧作为预览图（base64 格式）
  * @param videoUrl 视频地址（支持跨域或 Blob URL）
  * @param frameTime 预览帧时间点（number）
- * @returns 返回一个 Promise<string>，成功时返回 base64 图片，失败返回空字符串
+ * @returns 返回一个 `Promise<string>`，成功时返回 base64 图片，失败返回空字符串
  */
 export const video_preview = (videoUrl: string, frameTime: number = 0.1): Promise<string> => {
   return new Promise((resolve) => {
