@@ -9,7 +9,7 @@
 **Signature:**
 
 ```typescript
-num_expand_100: (amount: number | string, accuracy?: number) => string | number
+num_expand_100: (amount: number | string | undefined | null, accuracy?: number) => string | number | null | undefined
 ```
 
 ## Parameters
@@ -37,7 +37,7 @@ amount
 
 </td><td>
 
-number \| string
+number \| string \| undefined \| null
 
 
 </td><td>
@@ -65,5 +65,5 @@ _(Optional)_ 保留几位小数，默认2位
 </tbody></table>
 **Returns:**
 
-string \| number
+string \| number \| null \| undefined
 

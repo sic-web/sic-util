@@ -7,7 +7,7 @@
 **Signature:**
 
 ```typescript
-num_unit: (amount: number | string) => string | number
+num_unit: (amount: number | string | undefined | null) => string | number | null | undefined
 ```
 
 ## Parameters
@@ -35,7 +35,7 @@ amount
 
 </td><td>
 
-number \| string
+number \| string \| undefined \| null
 
 
 </td><td>
@@ -45,5 +45,5 @@ number \| string
 </tbody></table>
 **Returns:**
 
-string \| number
+string \| number \| null \| undefined
 

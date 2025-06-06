@@ -9,7 +9,7 @@
 **Signature:**
 
 ```typescript
-num_text: (number: number | string | undefined, type?: string) => string | false
+num_text: (number: number | string | undefined | null, type?: string) => string | false
 ```
 
 ## Parameters
@@ -37,7 +37,7 @@ number
 
 </td><td>
 
-number \| string \| undefined
+number \| string \| undefined \| null
 
 
 </td><td>

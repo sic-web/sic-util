@@ -1088,7 +1088,7 @@
             },
             {
               "kind": "Content",
-              "text": "number | string"
+              "text": "number | string | undefined | null"
             },
             {
               "kind": "Content",
@@ -1104,7 +1104,7 @@
             },
             {
               "kind": "Content",
-              "text": "string | number"
+              "text": "string | number | null | undefined"
             }
           ],
           "fileUrlPath": "dist/types/modules/number.d.ts",
@@ -1145,7 +1145,7 @@
             },
             {
               "kind": "Content",
-              "text": "number | string"
+              "text": "number | string | undefined | null"
             },
             {
               "kind": "Content",
@@ -1169,7 +1169,7 @@
             },
             {
               "kind": "Content",
-              "text": "string | number"
+              "text": "string | number | null | undefined"
             }
           ],
           "fileUrlPath": "dist/types/modules/number.d.ts",
@@ -1218,7 +1218,7 @@
             },
             {
               "kind": "Content",
-              "text": "any"
+              "text": "number | string | undefined | null"
             },
             {
               "kind": "Content",
@@ -1226,7 +1226,7 @@
             },
             {
               "kind": "Content",
-              "text": "any"
+              "text": "string | number | null | undefined"
             }
           ],
           "fileUrlPath": "dist/types/modules/number.d.ts",
@@ -1259,7 +1259,7 @@
             },
             {
               "kind": "Content",
-              "text": "number | string | undefined"
+              "text": "number | string | undefined | null"
             },
             {
               "kind": "Content",
@@ -1316,7 +1316,7 @@
             },
             {
               "kind": "Content",
-              "text": "number | string"
+              "text": "number | string | undefined | null"
             },
             {
               "kind": "Content",
@@ -1324,7 +1324,7 @@
             },
             {
               "kind": "Content",
-              "text": "string | number"
+              "text": "string | number | null | undefined"
             }
           ],
           "fileUrlPath": "dist/types/modules/number.d.ts",

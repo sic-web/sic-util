@@ -102,19 +102,19 @@ export const getUrlConfig: (url: string | null) => {
 export const hex_to_rgb: (hex: string) => RgbColor;
 
 // @public
-export const num_expand: (amount: number | string, unit?: number, accuracy?: number) => string | number;
+export const num_expand: (amount: number | string | undefined | null, unit?: number, accuracy?: number) => string | number | null | undefined;
 
 // @public
-export const num_expand_100: (amount: number | string, accuracy?: number) => string | number;
+export const num_expand_100: (amount: number | string | undefined | null, accuracy?: number) => string | number | null | undefined;
 
 // @public
-export const num_reduce_100: (amount: any) => any;
+export const num_reduce_100: (amount: number | string | undefined | null) => string | number | null | undefined;
 
 // @public
-export const num_text: (number: number | string | undefined, type?: string) => string | false;
+export const num_text: (number: number | string | undefined | null, type?: string) => string | false;
 
 // @public (undocumented)
-export const num_unit: (amount: number | string) => string | number;
+export const num_unit: (amount: number | string | undefined | null) => string | number | null | undefined;
 
 // @public
 export const reduce_opacity: (rgb: RgbColor, opacity: number) => RgbColor;

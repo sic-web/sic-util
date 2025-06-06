@@ -9,7 +9,7 @@
 **Signature:**
 
 ```typescript
-num_reduce_100: (amount: any) => any
+num_reduce_100: (amount: number | string | undefined | null) => string | number | null | undefined
 ```
 
 ## Parameters
@@ -37,7 +37,7 @@ amount
 
 </td><td>
 
-any
+number \| string \| undefined \| null
 
 
 </td><td>
@@ -49,5 +49,5 @@ any
 </tbody></table>
 **Returns:**
 
-any
+string \| number \| null \| undefined
 
