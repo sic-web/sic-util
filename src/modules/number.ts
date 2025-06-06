@@ -6,7 +6,7 @@ import Num from "number-precision"; // 保证精度不丢失
  * @param {*} unit 转换单位，默认100
  * @param {*} accuracy 保留几位小数，默认2位
  */
-export const num_expand = (amount: number | string | undefined | null, unit = 100, accuracy = 2) => {
+export const num_expand = (amount: any, unit = 100, accuracy = 2) => {
   if (amount || amount === 0) {
     const realAmount = Num.divide(amount, unit).toFixed(accuracy);
     return realAmount;
@@ -20,7 +20,7 @@ export const num_expand = (amount: number | string | undefined | null, unit = 10
  * @param {*} amount 当前金额
  * @param {*} accuracy 保留几位小数，默认2位
  */
-export const num_expand_100 = (amount: number | string | undefined | null, accuracy = 2) => {
+export const num_expand_100 = (amount: any, accuracy = 2) => {
   if (amount || amount === 0) {
     const realAmount = Num.divide(amount, 100).toFixed(accuracy);
     return realAmount;
@@ -28,7 +28,7 @@ export const num_expand_100 = (amount: number | string | undefined | null, accur
     return amount;
   }
 };
-export const num_unit = (amount: number | string | undefined | null) => {
+export const num_unit = (amount: any) => {
   const num = Number(amount);
   if (Math.abs(num) >= 100000000) {
     return `${num_expand(amount, 100000000)} 亿`;
@@ -42,7 +42,7 @@ export const num_unit = (amount: number | string | undefined | null) => {
  * 单位缩小两位，一般用于（元->分）（数->百分数）
  * @param {*} amount 当前金额
  */
-export const num_reduce_100 = (amount: number | string | undefined | null) => {
+export const num_reduce_100 = (amount: any) => {
   if (amount || amount === 0) {
     const realAmount = Num.times(amount, 100);
     return realAmount;
@@ -58,7 +58,7 @@ export const num_reduce_100 = (amount: number | string | undefined | null) => {
  *
  * @example number2text(100000000) => "壹亿元整"
  */
-export const num_text = (number: number | string | undefined | null, type = "upper") => {
+export const num_text = (number: any, type = "upper") => {
   // 配置
   const confs: any = {
     lower: {
