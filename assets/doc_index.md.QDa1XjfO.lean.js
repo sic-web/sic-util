@@ -1,1 +1,0 @@
-import{_ as a,c as t,o as r,ag as o}from"./chunks/framework.CQgK1aae.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"doc/index.md","filePath":"doc/index.md"}'),c={name:"doc/index.md"};function d(i,e,n,s,p,l){return r(),t("div",null,e[0]||(e[0]=[o("",4)]))}const f=a(c,[["render",d]]);export{_ as __pageData,f as default};
