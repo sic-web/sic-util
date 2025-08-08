@@ -39,6 +39,20 @@ export const num_unit = (amount: any) => {
   }
 };
 /**
+ * 单位缩小固定倍数
+ * @param {*} amount 当前金额
+ * @param {*} unit 转换单位，默认100
+ * @param {*} accuracy 保留几位小数，默认2位
+ */
+export const num_reduce = (amount: any, unit: number = 100) => {
+  if (amount || amount === 0) {
+    const realAmount = Num.times(amount, unit);
+    return realAmount;
+  } else {
+    return amount;
+  }
+};
+/**
  * 单位缩小两位，一般用于（元->分）（数->百分数）
  * @param {*} amount 当前金额
  */
@@ -90,7 +104,8 @@ export const num_text = (number: any, type = "upper") => {
   // 四位分级
   const levels = integer.reverse().reduce((pre: any, item, idx) => {
     const level = pre[0] && pre[0]?.length < 4 ? pre[0] : [];
-    const value = item === "0" ? conf.num[item] : conf.num[item] + conf.unit[idx % 4];
+    const value =
+      item === "0" ? conf.num[item] : conf.num[item] + conf.unit[idx % 4];
     level.unshift(value);
 
     if (level.length === 1) {
